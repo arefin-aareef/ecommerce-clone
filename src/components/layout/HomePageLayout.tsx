@@ -13,7 +13,7 @@ const HomePageLayout: FC<HomePageLayoutProps> = ({ children }) => {
 	return (
     <>
       <NavbarTop />
-      {/* <Navbar /> */}
+      <Navbar />
       <Flex>
         <Body>
           {children}

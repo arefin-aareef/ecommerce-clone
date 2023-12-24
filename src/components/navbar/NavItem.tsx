@@ -15,9 +15,11 @@ const NavItem: FC<NavItemProps> = ({ children, href, ...props }) => {
 			userSelect='none'
 			cursor='pointer'
 			fontWeight='600'
-			fontSize='14px'
+			fontSize='1rem'
 			letterSpacing='2px'
 			// onClick={() => dispatch(resetSidebar())}
+			_hover={{ borderBottom: '1px', transition: 'border-bottom 2s ease' }}
+
 			{...props}
 		>
 			{children}
