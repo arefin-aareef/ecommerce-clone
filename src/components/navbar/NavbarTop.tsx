@@ -1,8 +1,8 @@
-import { Avatar, Badge, Box, Flex, IconButton, Image, Input, Text } from '@chakra-ui/react';
+import { Box, Flex, Image, Input, Text } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import { CiLocationOn, CiSearch, CiUser } from 'react-icons/ci';
 import { MdFavoriteBorder } from 'react-icons/md';
-import { FaAngleDown, FaBars, FaWhatsapp } from 'react-icons/fa';
+import { FaBars, FaWhatsapp } from 'react-icons/fa';
 import { BsCart3 } from 'react-icons/bs';
 import { TfiAngleDown } from 'react-icons/tfi';
 
@@ -12,7 +12,7 @@ const NavbarTop: FC<NavbarTopProps> = ({}) => {
 	const leftPart = (
 		<Flex alignItems='center'>
 			{/* For Mobile */}
-			<Flex display={{ base: 'flex', xl: 'none' }} gap='16px'>
+			<Flex display={{ base: 'flex', xl: 'none' }} gap={4}>
 				<Flex cursor='pointer'>
 					<FaBars size={24} />
 				</Flex>
@@ -24,10 +24,10 @@ const NavbarTop: FC<NavbarTopProps> = ({}) => {
 			{/* For Desktop */}
 			<Flex
 				display={{ base: 'none', xl: 'flex' }}
-				gap='6px'
+				gap={1.5}
 				alignItems='center'
 			>
-				<Flex cursor='pointer' gap='6px'>
+				<Flex cursor='pointer' gap={1.5}>
 					<CiLocationOn size={24} />
 					<Text>FIND A STORE</Text>
 				</Flex>
@@ -51,7 +51,7 @@ const NavbarTop: FC<NavbarTopProps> = ({}) => {
 			{/* For Mobile */}
 			<Flex
 				display={{ base: 'flex', xl: 'none' }}
-				gap='16px'
+				gap={4}
 				alignItems='center'
 			>
 				<Flex cursor='pointer'>
@@ -78,7 +78,7 @@ const NavbarTop: FC<NavbarTopProps> = ({}) => {
 			<Flex
 				display={{ base: 'none', xl: 'flex' }}
 				alignItems='center'
-				gap='16px'
+				gap={4}
 			>
 				<Flex alignItems='center' cursor='pointer'>
 					<CiUser size={24} />
@@ -108,13 +108,13 @@ const NavbarTop: FC<NavbarTopProps> = ({}) => {
 				</Flex>
 				<Flex as='form' bg='white' alignItems='center'>
 					<Input
-						py='4px'
-						px='8px'
+						py={1}
+						px={2}
 						maxW={120}
 						variant='unstyled'
 						placeholder='SEARCH'
 					/>
-					<Flex px='8px' cursor='pointer'>
+					<Flex px={2} cursor='pointer'>
 						<CiSearch size={24} />
 					</Flex>
 				</Flex>
@@ -128,11 +128,10 @@ const NavbarTop: FC<NavbarTopProps> = ({}) => {
 			bgColor={{ base: 'white', xl: 'navBg' }}
 			justifyContent='center'
 			alignItems='center'
-      py={{base: '12px', xl: '24px'}}
+			py={{ base: 3, xl: 6 }}
+			px={{ base: 5, md: 20, xl: 5 }}
 		>
-			<Flex 
-			w='1280px' 
-			justifyContent='space-between'>
+			<Flex w='1280px' justifyContent='space-between'>
 				{leftPart}
 
 				{middlePart}

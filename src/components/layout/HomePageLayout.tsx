@@ -12,16 +12,19 @@ type HomePageLayoutProps = {
 
 const HomePageLayout: FC<HomePageLayoutProps> = ({ children }) => {
 	return (
-		<Box 
-    px={{base: '20px', md: '80px', xl: '0px'}}
-    >
+		<>
 			<NavbarTop />
 			<Navbar />
-			<Flex minH='100vh' mx='auto' maxW='1280px'>
+			<Flex
+				px={{ base: '20px', md: '80px', xl: '20px' }}
+				minH={{ base: 'calc(100vh - 50px)', xl: 'calc(100vh - 143px)' }}
+				mx='auto'
+				maxW='1280px'
+			>
 				<Body>{children}</Body>
 			</Flex>
-      <Footer />
-		</Box>
+			<Footer />
+		</>
 	);
 };
 
