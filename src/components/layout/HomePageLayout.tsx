@@ -1,5 +1,5 @@
 'use client';
-import { Flex } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 import React, { FC, ReactNode } from 'react';
 import Body from './Body';
 import Navbar from '../navbar/Navbar';
@@ -11,16 +11,16 @@ type HomePageLayoutProps = {
 
 const HomePageLayout: FC<HomePageLayoutProps> = ({ children }) => {
 	return (
-    <>
-      <NavbarTop />
-      <Navbar />
-      <Flex>
-        <Body>
-          {children}
-        </Body>
-      </Flex>
-    </>
-  );
+		<Box 
+    px={{base: '20px', md: '80px', xl: '0px'}}
+    >
+			<NavbarTop />
+			<Navbar />
+			<Flex bgColor='red' mx='auto' maxW='1280px'>
+				<Body>{children}</Body>
+			</Flex>
+		</Box>
+	);
 };
 
 export default HomePageLayout;

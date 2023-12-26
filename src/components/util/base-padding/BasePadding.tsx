@@ -7,10 +7,17 @@ type BasePaddingProps = FlexProps & {
 };
 
 const BasePadding: FC<BasePaddingProps> = ({ children, ...props }) => {
-	const style = {};
+	const style = {
+		// w: 'full',
+		// flex: 1,
+		// flexDir: 'column',
+		// pr: { base: '100px', lg: '0px' },
+		// py: { base: '16px', lg: '24px' },
+		// pl: { base: '16px', lg: '170px' },
+	};
 
 	return (
-		<Flex style={style} {...props}>
+		<Flex sx={style} {...props} bgColor='blue'>
 			{children}
 		</Flex>
 	);

@@ -129,9 +129,10 @@ const NavbarTop: FC<NavbarTopProps> = ({}) => {
 			justifyContent='center'
 			alignItems='center'
       py={{base: '12px', xl: '24px'}}
-      px={{base: '16px', md:'32px', xl: '24px'}}
 		>
-			<Flex w='1280px' justifyContent='space-between'>
+			<Flex 
+			w='1280px' 
+			justifyContent='space-between'>
 				{leftPart}
 
 				{middlePart}

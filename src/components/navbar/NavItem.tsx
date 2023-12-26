@@ -1,29 +1,38 @@
-import { Text, TextProps } from '@chakra-ui/react';
+import { Flex, Text, TextProps } from '@chakra-ui/react';
 import Link from 'next/link';
-import React, { FC, ReactNode } from 'react';
+import React, { FC, ReactNode, useState } from 'react';
+import DropdownMenu from './DropdownMenu';
 
 type NavItemProps = TextProps & {
 	children: ReactNode;
 	href?: string;
+	menuContent?: ReactNode;
 };
 
-const NavItem: FC<NavItemProps> = ({ children, href, ...props }) => {
+const NavItem: FC<NavItemProps> = ({ children, href, menuContent, ...props }) => {
+	const [isHovered, setIsHovered] = useState(false);
 	return (
-		<Text
-			as={Link}
-			href={href ? href : '/'}
-			userSelect='none'
-			cursor='pointer'
-			fontWeight='600'
-			fontSize='1rem'
-			letterSpacing='2px'
-			// onClick={() => dispatch(resetSidebar())}
-			_hover={{ borderBottom: '1px', transition: 'border-bottom 2s ease' }}
-
-			{...props}
+		<Flex
+			onMouseEnter={() => setIsHovered(true)}
+			onMouseLeave={() => setIsHovered(false)}
 		>
-			{children}
-		</Text>
+			<Text
+				as={Link}
+				href={href ? href : '/'}
+				userSelect='none'
+				cursor='pointer'
+				fontWeight='600'
+				fontSize='1rem'
+				letterSpacing='2px'
+				borderBottom='1px solid transparent'
+				// onClick={() => dispatch(resetSidebar())}
+				_hover={{ borderBottom: '1px', transition: 'border-bottom 1s ease' }}
+				{...props}
+			>
+				{children}
+			</Text>
+			<DropdownMenu isOpen={isHovered}>{menuContent}</DropdownMenu>
+		</Flex>
 	);
 };
 

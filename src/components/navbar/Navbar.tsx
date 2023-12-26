@@ -5,11 +5,12 @@ import NavItem from './NavItem';
 type NavbarProps = {};
 
 const Navbar: FC<NavbarProps> = ({}) => {
-
-  return (
-		<Flex w='full'>
-			<Flex mx='auto' w='1280px' justifyContent='space-between' py='16px'>
-				<NavItem href='/' textColor='red'>SNEAKER STUDIO</NavItem>
+	return (
+		<Flex w='full' display={{base: 'none', xl: 'flex'}}>
+			<Flex mx='auto' w='1200px' justifyContent='space-between' py='16px'>
+				<NavItem href='/' textColor='red'>
+					SNEAKER STUDIO
+				</NavItem>
 				<NavItem href='/'>BRANDS</NavItem>
 				<NavItem href='/'>MEN</NavItem>
 				<NavItem href='/'>WOMEN</NavItem>
