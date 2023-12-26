@@ -4,6 +4,7 @@ import React, { FC, ReactNode } from 'react';
 import Body from './Body';
 import Navbar from '../navbar/Navbar';
 import NavbarTop from '../navbar/NavbarTop';
+import Footer from '../footer/Footer';
 
 type HomePageLayoutProps = {
 	children: ReactNode;
@@ -16,9 +17,10 @@ const HomePageLayout: FC<HomePageLayoutProps> = ({ children }) => {
     >
 			<NavbarTop />
 			<Navbar />
-			<Flex bgColor='red' mx='auto' maxW='1280px'>
+			<Flex minH='100vh' mx='auto' maxW='1280px'>
 				<Body>{children}</Body>
 			</Flex>
+      <Footer />
 		</Box>
 	);
 };

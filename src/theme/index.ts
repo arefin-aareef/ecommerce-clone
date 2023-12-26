@@ -17,6 +17,8 @@ const config: ThemeConfig = {
 // 3. extend the theme
 const colors = {
 	navBg: '#f7f7f7',
+	footerBg: '#141414',
+	footerText: '#969696',
 };
 
 // 6. Add Breakpoints
@@ -31,7 +33,7 @@ export const breakpoints = {
 export const theme = extendTheme({
 	config,
 	colors,
-	// components,
 	breakpoints,
+	// components,
 	// shadows,
 });
