@@ -123,34 +123,34 @@ export const footerHeading = [
 			},
 		],
 	},
-	{
-		id: 5,
-		name: 'INFO',
-		subFooter: [
-			{
-				title: 'Bata Shoe Company'
-			},
-			{
-				title: 'Bangladesh Ltd.'
-			},
-			{
-				title: 'Tongi Gazipur, Bangladesh.'
-			},
-			{
-				title: ''
-			},
-			{
-				title: 'Call us at: 09666200300'
-			},
-			{
-				title: '(9am-9pm)'
-			},
-			{
-				title: 'Email:'
-			},
-			{
-				title: 'bd.customercare@bata.com'
-			},
-		],
-	},
+	// {
+	// 	id: 5,
+	// 	name: 'INFO',
+	// 	subFooter: [
+	// 		{
+	// 			title: 'Bata Shoe Company'
+	// 		},
+	// 		{
+	// 			title: 'Bangladesh Ltd.'
+	// 		},
+	// 		{
+	// 			title: 'Tongi Gazipur, Bangladesh.'
+	// 		},
+	// 		{
+	// 			title: ''
+	// 		},
+	// 		{
+	// 			title: 'Call us at: 09666200300'
+	// 		},
+	// 		{
+	// 			title: '(9am-9pm)'
+	// 		},
+	// 		{
+	// 			title: 'Email:'
+	// 		},
+	// 		{
+	// 			title: 'bd.customercare@bata.com'
+	// 		},
+	// 	],
+	// },
 ];
