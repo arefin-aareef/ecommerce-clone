@@ -19,6 +19,8 @@ const colors = {
 	navBg: '#f7f7f7',
 	footerBg: '#141414',
 	footerText: '#969696',
+	previousPrice: '#969696',
+	currentPrice: '#e7040f',
 };
 
 // 6. Add Breakpoints

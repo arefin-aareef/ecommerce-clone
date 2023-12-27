@@ -17,14 +17,17 @@ const HomePageLayout: FC<HomePageLayoutProps> = ({ children }) => {
 			<NavbarTop />
 			<Navbar />
 			<Hero />
+
 			<Flex
 				px={{ base: '20px', md: '80px', xl: '20px' }}
 				minH={{ base: 'calc(100vh - 50px)', xl: 'calc(100vh - 143px)' }}
 				mx='auto'
 				maxW='1280px'
+				w='full'
 			>
 				<Body>{children}</Body>
 			</Flex>
+
 			<Footer />
 		</>
 	);

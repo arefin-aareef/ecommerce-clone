@@ -14,7 +14,7 @@ const Hero: FC<HeroProps> = ({}) => {
 			<Swiper pagination={true} modules={[Pagination]} className='mySwiper'>
 				{heroImages.map(item => (
 					<SwiperSlide>
-						<Image key={item.id} src={item.href} alt={item.alt} />
+						<Image mx='auto' key={item.id} src={item.href} alt={item.alt} />
 					</SwiperSlide>
 				))}
 			</Swiper>

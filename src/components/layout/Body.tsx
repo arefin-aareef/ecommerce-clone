@@ -7,9 +7,7 @@ type BodyProps = FlexProps & {
 
 const Body: FC<BodyProps> = ({ children, ...props }) => {
 	return (
-		<Flex
-			{...props}
-		>
+		<Flex w='full' {...props}>
 			{children}
 		</Flex>
 	);
