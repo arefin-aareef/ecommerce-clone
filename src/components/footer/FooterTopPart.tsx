@@ -38,17 +38,9 @@ const FooterTopPart: FC<FooterTopPartProps> = ({}) => {
 						<Flex direction='column'>
 							{item.subFooter &&
 								item.subFooter.map(subItem => (
-									<>
-										{item.name === 'INFO' ? (
-											<FooterItem variant='info' key={subItem.title}>
-												{subItem.title}
-											</FooterItem>
-										) : (
-											<FooterItem variant='link' key={subItem.title}>
-												{subItem.title}
-											</FooterItem>
-										)}
-									</>
+									<FooterItem  key={subItem.title}>
+										{subItem.title}
+									</FooterItem>
 								))}
 						</Flex>
 					</Flex>
@@ -86,12 +78,10 @@ const FooterTopPart: FC<FooterTopPartProps> = ({}) => {
 							</Box>
 							<AccordionIcon />
 						</AccordionButton>
-
+						
 						{item.subFooter.map(subItem => (
 							<AccordionPanel pb={4}>
-								<FooterItem variant='link' key={subItem.title}>
-									{subItem.title}
-								</FooterItem>
+								<FooterItem key={subItem.title}>{subItem.title}</FooterItem>
 							</AccordionPanel>
 						))}
 					</AccordionItem>

@@ -128,7 +128,7 @@ const NavbarTop: FC<NavbarTopProps> = ({}) => {
 			bgColor={{ base: 'white', xl: 'navBg' }}
 			justifyContent='center'
 			alignItems='center'
-			py={{ base: 3, xl: 6 }}
+			py={{ base: 3, xl: 7 }}
 			px={{ base: 5, md: 20, xl: 5 }}
 		>
 			<Flex w='1280px' justifyContent='space-between'>

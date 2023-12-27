@@ -5,7 +5,7 @@ export const footerHeading = [
 		subFooter: [
 			{
 				title: 'About Us',
-				href: 'Careers',
+				href: '',
 			},
 			{
 				title: 'Careers',

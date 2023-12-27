@@ -5,37 +5,28 @@ import React, { FC, ReactNode } from 'react';
 type FooterItemProps = {
 	children: ReactNode;
 	href?: string;
-	variant?: 'info' | 'link';
 };
 
-const FooterItem: FC<FooterItemProps> = ({ children, href, variant, ...props }) => {
+const FooterItem: FC<FooterItemProps> = ({ children, href, ...props }) => {
 	return (
-		<>
-			{variant === 'link' && (
-				<Flex>
-					<Text
-						as={Link}
-						href={href ? href : '/'}
-						cursor='pointer'
-						fontSize='0.875rem'
-						borderBottom='1px solid transparent'
-						py={1}
-						_hover={{
-							borderBottom: '1px solid',
-							transition: 'border-bottom 0.3s ease',
-						}}
-						{...props}
-					>
-						{children}
-					</Text>
-				</Flex>
-			)}
-			{variant === 'info' && (
-				<Text fontSize='0.875rem' py={0.5} {...props}>
-					{children}
-				</Text>
-			)}
-		</>
+		<Flex>
+			<Text
+				as={Link}
+				href={href ? href : '/'}
+				cursor='pointer'
+				fontSize='0.875rem'
+				borderBottom='1px solid transparent'
+				py={{ base: 0, md: 1 }}
+				lineHeight={{base: 0.5, md: 2}}
+				_hover={{
+					borderBottom: '1px solid',
+					transition: 'border-bottom 0.3s ease',
+				}}
+				{...props}
+			>
+				{children}
+			</Text>
+		</Flex>
 	);
 };
 
