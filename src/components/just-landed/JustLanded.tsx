@@ -15,15 +15,30 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import ProductCard from '../product-card/ProductCard';
+import SectionHeader from '../util/section-header/SectionHeader';
 
 type JustLandedProps = {};
 
 const JustLanded: FC<JustLandedProps> = ({}) => {
+
+	// const breakpoints = {
+	// 	0: {
+	// 		slidesPerView: 2,
+	// 	},
+	// 	780: {
+	// 		slidesPerView: 3,
+	// 	},
+	// 	840: {
+	// 		slidesPerView: 4,
+	// 	},
+	// 	1200: {
+	// 		slidesPerView: 5,
+	// 	},
+	// };
+
 	return (
-		<Flex direction='column' gap={4} maxW='1280px'>
-			<Text fontSize='1.625rem' fontWeight={600}>
-				JUST LANDED
-			</Text>
+		<Flex direction='column' gap={4} maxW='1280px' w='full'>
+			<SectionHeader>JUST LANDED</SectionHeader>
 			<Tabs variant='soft-rounded' colorScheme='gray'>
 				<Flex w={{ base: '360px', md: 'full' }}>
 					<TabList pb={6} w='fit-content' mx='auto' overflowX='auto'>
@@ -43,15 +58,19 @@ const JustLanded: FC<JustLandedProps> = ({}) => {
 									<Swiper
 										style={{ width: '100%', maxWidth: '100vw' }}
 										slidesPerView={5}
-										spaceBetween={30}
+										// slidesPerView='auto'
+										// breakpoints={breakpoints}
+										spaceBetween={2}
 										pagination={{
 											clickable: true,
 										}}
 										modules={[Pagination]}
 									>
-										{item.product.map(product => (
-											<SwiperSlide style={{ maxWidth: '100vw' }}>
-												<ProductCard product={product} />
+										{item.product.map((product, i) => (
+											<SwiperSlide key={i} style={{ maxWidth: '100vw' }}>
+												<Flex pb={12} w='full'>
+													<ProductCard product={product} />
+												</Flex>
 											</SwiperSlide>
 										))}
 									</Swiper>
