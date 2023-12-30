@@ -100,6 +100,7 @@ export const bestSellerCollection = [
 		availability: ['In stock'],
 		previousPrice: 14999,
 		currentPrice: 12999,
+		size: [9],
 		Quantity: 25,
 		rating: 4,
 	},

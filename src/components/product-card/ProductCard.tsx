@@ -20,7 +20,7 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
 			border='1px solid grey'
 			borderRadius={4}
 		>
-			<Flex w='full' position='relative'>
+			<Flex w='full' flex={1}  position='relative'>
 				<Image w='260px' h='224px' src={product.img} />
 				<Flex position='absolute' right={2} top={2}>
 					<GoHeart size={24} />

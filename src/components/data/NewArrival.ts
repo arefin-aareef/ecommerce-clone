@@ -19,7 +19,7 @@ export const newArrival = [
 				currentPrice: 9786,
 				size: [6, 7, 8, 9, 10, 11],
 				Quantity: 10,
-				rating: 1
+				rating: 1,
 			},
 			{
 				productId: 2,
@@ -37,7 +37,7 @@ export const newArrival = [
 				currentPrice: 6499,
 				size: [5, 6, 7, 8, 9, 10],
 				Quantity: 20,
-				rating: 2
+				rating: 2,
 			},
 			{
 				productId: 3,
@@ -54,7 +54,7 @@ export const newArrival = [
 				currentPrice: 5999,
 				size: [6, 7, 8, 9, 10],
 				Quantity: 15,
-				rating: 3
+				rating: 3,
 			},
 			{
 				productId: 4,
@@ -71,7 +71,7 @@ export const newArrival = [
 				currentPrice: 7499,
 				size: [7, 8, 9, 10],
 				Quantity: 12,
-				rating: 3
+				rating: 3,
 			},
 			{
 				productId: 5,
@@ -88,7 +88,7 @@ export const newArrival = [
 				currentPrice: 4999,
 				size: [5, 6, 7, 8, 9],
 				Quantity: 18,
-				rating: 4
+				rating: 4,
 			},
 			{
 				productId: 6,
@@ -105,7 +105,7 @@ export const newArrival = [
 				currentPrice: 6999,
 				size: [7, 8, 9, 10, 11],
 				Quantity: 14,
-				rating: 5
+				rating: 5,
 			},
 		],
 	},
@@ -128,7 +128,7 @@ export const newArrival = [
 				currentPrice: 7499,
 				size: [5, 6, 7, 8, 9, 10],
 				Quantity: 15,
-				rating: 4
+				rating: 4,
 			},
 			{
 				productId: 8,
@@ -145,7 +145,7 @@ export const newArrival = [
 				currentPrice: 8999,
 				size: [6, 7, 8, 9, 10],
 				Quantity: 20,
-				rating: 3
+				rating: 3,
 			},
 			{
 				productId: 9,
@@ -162,7 +162,7 @@ export const newArrival = [
 				currentPrice: 6999,
 				size: [7, 8, 9, 10],
 				Quantity: 18,
-				rating: 2
+				rating: 2,
 			},
 			{
 				productId: 10,
@@ -179,7 +179,7 @@ export const newArrival = [
 				currentPrice: 7499,
 				size: [8, 9, 10],
 				Quantity: 14,
-				rating: 4
+				rating: 4,
 			},
 			{
 				productId: 11,
@@ -196,7 +196,7 @@ export const newArrival = [
 				currentPrice: 5999,
 				size: [6, 7, 8, 9],
 				Quantity: 16,
-				rating: 5
+				rating: 5,
 			},
 			{
 				productId: 12,
@@ -214,7 +214,7 @@ export const newArrival = [
 				currentPrice: 8999,
 				size: [7, 8, 9, 10],
 				Quantity: 20,
-				rating: 2
+				rating: 2,
 			},
 		],
 	},
@@ -237,7 +237,7 @@ export const newArrival = [
 				currentPrice: 6999,
 				size: [7, 8, 9, 10],
 				Quantity: 20,
-				rating: 1
+				rating: 1,
 			},
 			{
 				productId: 14,
@@ -255,7 +255,7 @@ export const newArrival = [
 				currentPrice: 5999,
 				size: [8, 9, 10],
 				Quantity: 15,
-				rating: 2
+				rating: 2,
 			},
 			{
 				productId: 15,
@@ -273,7 +273,7 @@ export const newArrival = [
 				currentPrice: 7999,
 				size: [6, 7, 8, 9, 10],
 				Quantity: 18,
-				rating: 3
+				rating: 3,
 			},
 			{
 				productId: 16,
@@ -291,7 +291,7 @@ export const newArrival = [
 				currentPrice: 7499,
 				size: [7, 8, 9],
 				Quantity: 12,
-				rating: 4
+				rating: 4,
 			},
 			{
 				productId: 17,
@@ -308,7 +308,7 @@ export const newArrival = [
 				currentPrice: 6999,
 				size: [8, 9, 10],
 				Quantity: 16,
-				rating: 4
+				rating: 4,
 			},
 			{
 				productId: 18,
@@ -326,7 +326,7 @@ export const newArrival = [
 				currentPrice: 6499,
 				size: [7, 8, 9],
 				Quantity: 14,
-				rating: 5
+				rating: 5,
 			},
 		],
 	},
@@ -350,7 +350,7 @@ export const newArrival = [
 				currentPrice: 19999,
 				size: [5, 6, 7, 8, 9],
 				Quantity: 20,
-				rating: 4
+				rating: 4,
 			},
 			{
 				productId: 20,
@@ -368,7 +368,7 @@ export const newArrival = [
 				currentPrice: 9999,
 				size: [6, 7, 8],
 				Quantity: 15,
-				rating: 2
+				rating: 2,
 			},
 			{
 				productId: 21,
@@ -386,7 +386,7 @@ export const newArrival = [
 				currentPrice: 15999,
 				size: [7, 8, 9],
 				Quantity: 18,
-				rating: 4
+				rating: 4,
 			},
 			{
 				productId: 22,
@@ -403,7 +403,7 @@ export const newArrival = [
 				currentPrice: 6999,
 				size: [6, 7, 8],
 				Quantity: 16,
-				rating: 2
+				rating: 2,
 			},
 			{
 				productId: 23,
@@ -421,7 +421,7 @@ export const newArrival = [
 				currentPrice: 8999,
 				size: [7, 8, 9],
 				Quantity: 14,
-				rating: 5
+				rating: 5,
 			},
 			{
 				productId: 24,
@@ -439,7 +439,7 @@ export const newArrival = [
 				currentPrice: 5999,
 				size: [6, 7, 8],
 				Quantity: 12,
-				rating: 4
+				rating: 4,
 			},
 		],
 	},
@@ -463,7 +463,7 @@ export const newArrival = [
 				currentPrice: 34999,
 				size: [8, 9, 10, 11],
 				Quantity: 20,
-				rating: 5
+				rating: 5,
 			},
 			{
 				productId: 26,
@@ -481,7 +481,7 @@ export const newArrival = [
 				currentPrice: 24999,
 				size: [7, 8, 9],
 				Quantity: 15,
-				rating: 4
+				rating: 4,
 			},
 			{
 				productId: 27,
@@ -499,7 +499,7 @@ export const newArrival = [
 				currentPrice: 22999,
 				size: [8, 9, 10],
 				Quantity: 18,
-				rating: 2
+				rating: 2,
 			},
 			{
 				productId: 28,
@@ -517,7 +517,7 @@ export const newArrival = [
 				currentPrice: 16999,
 				size: [9, 10, 11],
 				Quantity: 16,
-				rating: 1
+				rating: 1,
 			},
 			{
 				productId: 29,
@@ -535,7 +535,7 @@ export const newArrival = [
 				currentPrice: 7499,
 				size: [7, 8, 9],
 				Quantity: 14,
-				rating: 3
+				rating: 3,
 			},
 			{
 				productId: 30,
@@ -553,7 +553,7 @@ export const newArrival = [
 				currentPrice: 19999,
 				size: [8, 9, 10],
 				Quantity: 12,
-				rating: 4
+				rating: 4,
 			},
 		],
 	},
@@ -574,8 +574,9 @@ export const newArrival = [
 				availability: ['In stock'],
 				previousPrice: 14999,
 				currentPrice: 12999,
+				size: [9],
 				Quantity: 25,
-				rating: 4
+				rating: 4,
 			},
 			{
 				productId: 32,
@@ -591,8 +592,9 @@ export const newArrival = [
 				availability: ['In stock'],
 				previousPrice: 24999,
 				currentPrice: 21999,
+				size: [9],
 				Quantity: 20,
-				rating: 5
+				rating: 5,
 			},
 			{
 				productId: 33,
@@ -608,8 +610,9 @@ export const newArrival = [
 				availability: ['In stock', 'Out of stock'],
 				previousPrice: 29999,
 				currentPrice: 25999,
+				size: [9],
 				Quantity: 18,
-				rating: 1
+				rating: 1,
 			},
 			{
 				productId: 34,
@@ -625,8 +628,9 @@ export const newArrival = [
 				availability: ['In stock'],
 				previousPrice: 9999,
 				currentPrice: 7999,
+				size: [9],
 				Quantity: 22,
-				rating: 3
+				rating: 3,
 			},
 			{
 				productId: 35,
@@ -642,8 +646,9 @@ export const newArrival = [
 				availability: ['In stock'],
 				previousPrice: 34999,
 				currentPrice: 29999,
+				size: [9],
 				Quantity: 15,
-				rating: 2
+				rating: 2,
 			},
 			{
 				productId: 36,
@@ -658,8 +663,9 @@ export const newArrival = [
 				availability: ['In stock'],
 				previousPrice: 49999,
 				currentPrice: 42999,
+				size: [9],
 				Quantity: 10,
-				rating: 5
+				rating: 5,
 			},
 		],
 	},
