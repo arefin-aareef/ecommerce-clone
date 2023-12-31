@@ -1,21 +1,93 @@
-import { Box, Flex, Image, Input, Text } from '@chakra-ui/react';
-import React, { FC } from 'react';
+import {
+	Box,
+	Button,
+	Flex,
+	IconButton,
+	Image,
+	Input,
+	Text,
+	useDisclosure,
+} from '@chakra-ui/react';
+import React, { FC, useRef } from 'react';
 import { CiLocationOn, CiSearch, CiUser } from 'react-icons/ci';
 import { MdFavoriteBorder } from 'react-icons/md';
 import { FaBars, FaWhatsapp } from 'react-icons/fa';
 import { BsCart3 } from 'react-icons/bs';
 import { TfiAngleDown } from 'react-icons/tfi';
+import {
+	Drawer,
+	DrawerBody,
+	DrawerFooter,
+	DrawerHeader,
+	DrawerOverlay,
+	DrawerContent,
+	DrawerCloseButton,
+} from '@chakra-ui/react';
+import { navCategories } from '../data/NavbarData';
+import NavItem from './NavItem';
 
 type NavbarTopProps = {};
 
 const NavbarTop: FC<NavbarTopProps> = ({}) => {
+	const { isOpen, onOpen, onClose } = useDisclosure();
+	// const btnRef = React.useRef();
+	const btnRef = useRef<HTMLButtonElement>(null);
+
+	const drawer = (
+		<>
+			<Drawer
+				isOpen={isOpen}
+				placement='left'
+				onClose={onClose}
+				finalFocusRef={btnRef}
+			>
+				<DrawerOverlay />
+
+				<DrawerContent position='relative'>
+					<DrawerCloseButton
+						position='absolute'
+						color='white'
+						rounded='unset'
+						right={-8}
+						top={0}
+						bg='red'
+					/>
+					{/* <DrawerHeader></DrawerHeader> */}
+
+					<DrawerBody>
+						{navCategories.map(item => (
+							<Flex borderBottom='1px solid grey' _hover={{bg: 'grey'}}>
+								<Button bg='transparent' _hover={{bg: 'transparent'}}>{item.name}</Button>
+							</Flex>
+						))}
+					</DrawerBody>
+
+					{/* <DrawerFooter>
+						<Button variant='outline' mr={3} onClick={onClose}>
+							Cancel
+						</Button>
+						<Button colorScheme='blue'>Save</Button>
+					</DrawerFooter> */}
+				</DrawerContent>
+			</Drawer>
+		</>
+	);
+
 	const leftPart = (
 		<Flex alignItems='center'>
 			{/* For Mobile */}
-			<Flex display={{ base: 'flex', xl: 'none' }} gap={4}>
-				<Flex cursor='pointer'>
-					<FaBars size={24} />
-				</Flex>
+			<Flex display={{ base: 'flex', xl: 'none' }} gap={4} alignItems='center'>
+				<IconButton
+					ref={btnRef}
+					bg='transparent'
+					onClick={onOpen}
+					aria-label='menu'
+					icon={<FaBars size={24} />}
+					_hover={{ bg: 'transparent' }}
+				/>
+
+				{drawer}
+
 				<Flex cursor='pointer'>
 					<CiSearch size={24} />
 				</Flex>
@@ -49,11 +121,7 @@ const NavbarTop: FC<NavbarTopProps> = ({}) => {
 	const rightPart = (
 		<Flex>
 			{/* For Mobile */}
-			<Flex
-				display={{ base: 'flex', xl: 'none' }}
-				gap={4}
-				alignItems='center'
-			>
+			<Flex display={{ base: 'flex', xl: 'none' }} gap={4} alignItems='center'>
 				<Flex cursor='pointer'>
 					<CiUser size={24} />
 				</Flex>
@@ -75,11 +143,7 @@ const NavbarTop: FC<NavbarTopProps> = ({}) => {
 			</Flex>
 
 			{/* For Desktop */}
-			<Flex
-				display={{ base: 'none', xl: 'flex' }}
-				alignItems='center'
-				gap={4}
-			>
+			<Flex display={{ base: 'none', xl: 'flex' }} alignItems='center' gap={4}>
 				<Flex alignItems='center' cursor='pointer'>
 					<CiUser size={24} />
 					<TfiAngleDown size={12} />

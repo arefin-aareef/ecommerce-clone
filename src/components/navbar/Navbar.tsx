@@ -11,7 +11,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
 			<Flex direction='column' w='full'>
 				<Flex mx='auto' w='1200px' justifyContent='space-between' py='16px'>
 					{navCategories.map(item => (
-						<NavItem href='/'>{item.name}</NavItem>
+						<NavItem variant='large' href='/'>{item.name}</NavItem>
 					))}
 				</Flex>
 				<Divider />
