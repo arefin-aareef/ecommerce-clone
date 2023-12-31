@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import { handPickedCollection } from '../data/CardDataCollection';
+import { handPickedCollection } from '../data/SectionCardCollection';
 import SectionCard from './SectionCard';
 
 type HandPickedProps = {};
@@ -28,7 +28,7 @@ const HandPicked: FC<HandPickedProps> = ({}) => {
 				>
 					{handPickedCollection.map((item, i) => (
 						<SwiperSlide key={i} style={{ maxWidth: '100vw' }}>
-							<SectionCard item={item} />
+							<SectionCard buttonTitle='SHOP NOW' item={item} />
 						</SwiperSlide>
 					))}
 				</Swiper>

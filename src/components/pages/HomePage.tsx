@@ -7,6 +7,7 @@ import FeaturedProduct from '../featured-product/FeaturedProduct';
 import BestSeller from '../best-seller/BestSeller';
 import Favourite from '../favourite/Favourite';
 import RecentPosts from '../recent-posts/RecentPosts';
+import BataInstagram from '../bata-instagram/BataInstagram';
 
 type HomePageProps = {};
 
@@ -20,6 +21,7 @@ const HomePage: FC<HomePageProps> = ({}) => {
 			<BestSeller />
 			<Favourite />
 			<RecentPosts />
+			<BataInstagram />
 		</Flex>
 	);
 };

@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import SectionHeader from '../util/section-header/SectionHeader';
 import { Flex } from '@chakra-ui/react';
-import { favouriteCollection } from '../data/CardDataCollection';
+import { favouriteCollection } from '../data/SectionCardCollection';
 import SectionCard from '../hand-picked/SectionCard';
 
 type FavouriteProps = {};
@@ -14,7 +14,7 @@ type FavouriteProps = {};
 const Favourite: FC<FavouriteProps> = ({}) => {
 	return (
 		<Flex w='full' direction='column' maxW='1280px'>
-			<SectionHeader>PICK YOUR FAVOURITES</SectionHeader>
+			<SectionHeader>PICK YOUR FAVORITES</SectionHeader>
 
 			<Flex w='full' maxW='100vw' minW='100%'>
 				<Swiper
@@ -28,7 +28,7 @@ const Favourite: FC<FavouriteProps> = ({}) => {
 				>
 					{favouriteCollection.map((item, i) => (
 						<SwiperSlide key={i} style={{ maxWidth: '100vw' }}>
-							<SectionCard item={item} />
+							<SectionCard buttonTitle='SHOP NOW' item={item} />
 						</SwiperSlide>
 					))}
 				</Swiper>
