@@ -22,6 +22,7 @@ const colors = {
 	previousPrice: '#969696',
 	currentPrice: '#e7040f',
 	sectionCardTitleColor: '#9d9e9d',
+	sidebarHoverColor: '#fafafa',
 };
 
 // 6. Add Breakpoints

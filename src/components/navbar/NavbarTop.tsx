@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 import React, { FC, useRef } from 'react';
 import { CiLocationOn, CiSearch, CiUser } from 'react-icons/ci';
-import { MdFavoriteBorder } from 'react-icons/md';
+import { MdFavoriteBorder, MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { FaBars, FaWhatsapp } from 'react-icons/fa';
 import { BsCart3 } from 'react-icons/bs';
 import { TfiAngleDown } from 'react-icons/tfi';
@@ -24,54 +24,19 @@ import {
 	DrawerCloseButton,
 } from '@chakra-ui/react';
 import { navCategories } from '../data/NavbarData';
-import NavItem from './NavItem';
 
 type NavbarTopProps = {};
 
 const NavbarTop: FC<NavbarTopProps> = ({}) => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
-	// const btnRef = React.useRef();
+	const {
+		isOpen: isOpen1,
+		onOpen: onOpen1,
+		onClose: onClose1,
+	} = useDisclosure();
 	const btnRef = useRef<HTMLButtonElement>(null);
-
-	const drawer = (
-		<>
-			<Drawer
-				isOpen={isOpen}
-				placement='left'
-				onClose={onClose}
-				finalFocusRef={btnRef}
-			>
-				<DrawerOverlay />
-
-				<DrawerContent position='relative'>
-					<DrawerCloseButton
-						position='absolute'
-						color='white'
-						rounded='unset'
-						right={-8}
-						top={0}
-						bg='red'
-					/>
-					{/* <DrawerHeader></DrawerHeader> */}
-
-					<DrawerBody>
-						{navCategories.map(item => (
-							<Flex borderBottom='1px solid grey' _hover={{bg: 'grey'}}>
-								<Button bg='transparent' _hover={{bg: 'transparent'}}>{item.name}</Button>
-							</Flex>
-						))}
-					</DrawerBody>
-
-					{/* <DrawerFooter>
-						<Button variant='outline' mr={3} onClick={onClose}>
-							Cancel
-						</Button>
-						<Button colorScheme='blue'>Save</Button>
-					</DrawerFooter> */}
-				</DrawerContent>
-			</Drawer>
-		</>
-	);
+	const btnRef1 = useRef<HTMLButtonElement>(null);
+	// const btnRef = React.useRef();
 
 	const leftPart = (
 		<Flex alignItems='center'>
@@ -86,7 +51,53 @@ const NavbarTop: FC<NavbarTopProps> = ({}) => {
 					_hover={{ bg: 'transparent' }}
 				/>
 
-				{drawer}
+				<Drawer
+					isOpen={isOpen}
+					placement='left'
+					onClose={onClose}
+					finalFocusRef={btnRef}
+				>
+					<DrawerOverlay />
+
+					<DrawerContent position='relative'>
+						<DrawerCloseButton
+							position='absolute'
+							color='white'
+							rounded='unset'
+							right={-8}
+							top={0}
+							bg='red'
+						/>
+
+						<DrawerBody>
+							{navCategories.map(item => (
+								<Flex
+									as='button'
+									w='full'
+									borderBottom='1px solid grey'
+									_hover={{ bg: 'sidebarHoverColor' }}
+									alignItems='center'
+									justifyContent='space-between'
+								>
+									<Text py={2} fontWeight={600}>
+										{item.name}
+									</Text>
+									<MdOutlineKeyboardArrowRight />
+								</Flex>
+							))}
+							{/* <Flex>
+								<Drawer
+									isOpen={isOpen1}
+									placement='left'
+									onClose={onClose1}
+									finalFocusRef={btnRef1}
+								>
+									<DrawerOverlay />
+								</Drawer>
+							</Flex> */}
+						</DrawerBody>
+					</DrawerContent>
+				</Drawer>
 
 				<Flex cursor='pointer'>
 					<CiSearch size={24} />

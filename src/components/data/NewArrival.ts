@@ -1,7 +1,7 @@
 export const newArrival = [
 	{
 		id: 1,
-		category: 'Casuals',
+		subCategory: 'Casuals',
 		product: [
 			{
 				productId: 1,
@@ -111,7 +111,7 @@ export const newArrival = [
 	},
 	{
 		id: 2,
-		category: 'Sneakers',
+		subCategory: 'Sneakers',
 		product: [
 			{
 				productId: 7,
@@ -220,7 +220,7 @@ export const newArrival = [
 	},
 	{
 		id: 3,
-		category: 'Sandals',
+		subCategory: 'Sandals',
 		product: [
 			{
 				productId: 13,
@@ -332,7 +332,7 @@ export const newArrival = [
 	},
 	{
 		id: 4,
-		category: 'Ladies Flats',
+		subCategory: 'Ladies Flats',
 		product: [
 			{
 				productId: 19,
@@ -445,7 +445,7 @@ export const newArrival = [
 	},
 	{
 		id: 5,
-		category: 'Formals',
+		subCategory: 'Formals',
 		product: [
 			{
 				productId: 25,
@@ -559,7 +559,7 @@ export const newArrival = [
 	},
 	{
 		id: 6,
-		category: 'Accessories',
+		subCategory: 'Accessories',
 		product: [
 			{
 				productId: 31,

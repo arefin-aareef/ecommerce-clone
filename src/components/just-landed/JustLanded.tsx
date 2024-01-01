@@ -20,7 +20,6 @@ import SectionHeader from '../util/section-header/SectionHeader';
 type JustLandedProps = {};
 
 const JustLanded: FC<JustLandedProps> = ({}) => {
-
 	// const breakpoints = {
 	// 	0: {
 	// 		slidesPerView: 2,
@@ -44,7 +43,7 @@ const JustLanded: FC<JustLandedProps> = ({}) => {
 					<TabList pb={6} w='fit-content' mx='auto' overflowX='auto'>
 						{newArrival.map(item => (
 							<Tab key={item.id} w='auto' px={6} py={2}>
-								{item.category}
+								{item.subCategory}
 							</Tab>
 						))}
 					</TabList>
