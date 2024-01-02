@@ -1,4 +1,5 @@
-import { Divider, Flex, FlexProps } from '@chakra-ui/react';
+'use client'
+import { Divider, Flex } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import NavItem from './NavItem';
 import { navCategories } from '../data/NavbarData';

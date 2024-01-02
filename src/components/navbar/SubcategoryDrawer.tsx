@@ -39,11 +39,11 @@ const SubcategoryDrawer: FC<SubcategoryDrawerProps> = ({
 						{subcategories.map(subcategory => (
 							<Flex key={subcategory.title} direction='column'>
 								<Text fontWeight='bold'>{subcategory.title}</Text>
-								{(subcategory.subCategory ?? []).map(subItem => (
+								{/* {(subcategory.subCategory ?? []).map(subItem => (
 									<Flex key={subItem.subCategoryName} alignItems='center'>
 										<Text>{subItem.subCategoryName}</Text>
 									</Flex>
-								))}
+								))} */}
 							</Flex>
 						))}
 					</Flex>

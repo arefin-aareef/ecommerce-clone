@@ -1,9 +1,11 @@
+'use client'
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import ButtonShopNow from '../util/custom-button/ButtonShopNow';
 import { GoHeart } from 'react-icons/go';
 import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css';
+import { useRouter } from 'next/navigation';
 
 type ProductCardProps = {
 	product?: any;
@@ -11,6 +13,12 @@ type ProductCardProps = {
 };
 
 const ProductCard: FC<ProductCardProps> = ({ product }) => {
+
+	const router = useRouter();
+	const handleProductClick = (productId: string) => {
+		router.push(`/product/${productId}`);
+	};
+
 	return (
 		<Flex
 			w='full'
@@ -19,9 +27,13 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
 			gap={2}
 			border='1px solid grey'
 			borderRadius={4}
+			onClick={() => handleProductClick(product.productId)}
+
 		>
-			<Flex w='full' flex={1}  position='relative'>
-				<Image w='260px' h='224px' src={product.img} />
+			<Flex w='full' flex={1} position='relative'>
+				<Box w='260px' h='224px'>
+					<Image w='100%' h='auto' src={product.img} />
+				</Box>
 				<Flex position='absolute' right={2} top={2}>
 					<GoHeart size={24} />
 				</Flex>

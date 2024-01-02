@@ -1,3 +1,4 @@
+'use client'
 import { Flex, Image } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import NavbarTopRight from './NavbarTopRight';
