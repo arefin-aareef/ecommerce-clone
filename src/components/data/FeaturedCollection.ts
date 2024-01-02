@@ -1,6 +1,6 @@
 export const featuredCollection = [
 	{
-		productId: 1,
+		productId: '1',
 		brand: 'BATA',
 		name: 'Hush Puppies JENSON OXFORD Casual Shoe For Men',
 		description:
@@ -18,7 +18,7 @@ export const featuredCollection = [
 		rating: 1,
 	},
 	{
-		productId: 2,
+		productId: '2',
 		brand: 'Nike',
 		name: 'Nike Air Max 90',
 		description: 'Classic Air Max style and comfort for everyday wear.',
@@ -35,7 +35,7 @@ export const featuredCollection = [
 		rating: 4,
 	},
 	{
-		productId: 3,
+		productId: '3',
 		brand: 'Ecco',
 		name: 'Ecco Yucatan Sandal',
 		description: 'Ecco Yucatan Sandal for outdoor adventures and comfort.',
@@ -52,7 +52,7 @@ export const featuredCollection = [
 		rating: 1,
 	},
 	{
-		productId: 4,
+		productId: '4',
 		brand: 'Tory Burch',
 		name: 'Tory Burch Minnie Travel Ballet Flat',
 		description:
@@ -70,7 +70,7 @@ export const featuredCollection = [
 		rating: 4,
 	},
 	{
-		productId: 5,
+		productId: '5',
 		brand: 'Allen Edmonds',
 		name: 'Allen Edmonds Park Avenue Cap-Toe Oxford',
 		description:
@@ -88,7 +88,7 @@ export const featuredCollection = [
 		rating: 5,
 	},
 	{
-		productId: 6,
+		productId: '6',
 		brand: 'Ray-Ban',
 		name: 'Ray-Ban Classic Aviator Sunglasses',
 		description: 'Ray-Ban Classic Aviator Sunglasses for timeless style.',

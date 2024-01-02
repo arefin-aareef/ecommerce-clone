@@ -9,7 +9,6 @@ import { useRouter } from 'next/navigation';
 
 type ProductCardProps = {
 	product?: any;
-	size?: number[];
 };
 
 const ProductCard: FC<ProductCardProps> = ({ product }) => {
@@ -25,10 +24,13 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
 			direction='column'
 			p={4}
 			gap={2}
-			border='1px solid grey'
+			border='1px solid transparent'
 			borderRadius={4}
 			onClick={() => handleProductClick(product.productId)}
-
+			_hover={{
+				border: '1px',
+				borderColor: 'productCardBorderColor',
+			}}
 		>
 			<Flex w='full' flex={1} position='relative'>
 				<Box w='260px' h='224px'>

@@ -26,6 +26,7 @@ const colors = {
 	sectionCardTitleColor: '#9d9e9d',
 	sidebarHoverColor: '#fafafa',
 	cartSidebarTextColor: '#2d2d2d',
+	productCardBorderColor: '#ebebeb',
 };
 
 // 6. Add Breakpoints

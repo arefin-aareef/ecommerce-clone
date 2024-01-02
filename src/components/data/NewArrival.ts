@@ -1,10 +1,10 @@
 export const newArrival = [
 	{
-		id: 1,
+		id: '1',
 		subCategory: 'Casuals',
 		product: [
 			{
-				productId: 1,
+				productId: '1',
 				brand: 'BATA',
 				name: 'Hush Puppies JENSON OXFORD Casual Shoe For Men',
 				description:
@@ -22,7 +22,7 @@ export const newArrival = [
 				rating: 1,
 			},
 			{
-				productId: 2,
+				productId: '2',
 				brand: 'Adidas',
 				name: 'Adidas Originals Stan Smith',
 				description:
@@ -40,7 +40,7 @@ export const newArrival = [
 				rating: 2,
 			},
 			{
-				productId: 3,
+				productId: '3',
 				brand: 'Vans',
 				name: 'Vans Classic Slip-On',
 				description: 'Easy slip-on Vans for casual comfort and style.',
@@ -57,7 +57,7 @@ export const newArrival = [
 				rating: 3,
 			},
 			{
-				productId: 4,
+				productId: '4',
 				brand: 'Puma',
 				name: 'Puma Suede Classic',
 				description: 'Timeless Puma Suede Classic for casual everyday wear.',
@@ -74,7 +74,7 @@ export const newArrival = [
 				rating: 3,
 			},
 			{
-				productId: 5,
+				productId: '5',
 				brand: 'Converse',
 				name: 'Converse Chuck Taylor All Star',
 				description: 'Classic Converse Chuck Taylors for versatile style.',
@@ -91,7 +91,7 @@ export const newArrival = [
 				rating: 4,
 			},
 			{
-				productId: 6,
+				productId: '6',
 				brand: 'New Balance',
 				name: 'New Balance 574',
 				description: 'New Balance 574 for a blend of style and comfort.',
@@ -110,11 +110,11 @@ export const newArrival = [
 		],
 	},
 	{
-		id: 2,
+		id: '2',
 		subCategory: 'Sneakers',
 		product: [
 			{
-				productId: 7,
+				productId: '7',
 				brand: 'Nike',
 				name: 'Nike Air Max 90',
 				description: 'Classic Air Max style and comfort for everyday wear.',
@@ -131,7 +131,7 @@ export const newArrival = [
 				rating: 4,
 			},
 			{
-				productId: 8,
+				productId: '8',
 				brand: 'Adidas',
 				name: 'Adidas UltraBoost',
 				description: 'Adidas UltraBoost for ultimate cushioning and support.',
@@ -148,7 +148,7 @@ export const newArrival = [
 				rating: 3,
 			},
 			{
-				productId: 9,
+				productId: '9',
 				brand: 'Reebok',
 				name: 'Reebok Classic Leather',
 				description: 'Timeless Reebok Classic Leather for versatile style.',
@@ -165,7 +165,7 @@ export const newArrival = [
 				rating: 2,
 			},
 			{
-				productId: 10,
+				productId: '10',
 				brand: 'Puma',
 				name: 'Puma RS-X3',
 				description: 'Puma RS-X3 for a bold and chunky sneaker style.',
@@ -182,7 +182,7 @@ export const newArrival = [
 				rating: 4,
 			},
 			{
-				productId: 11,
+				productId: '11',
 				brand: 'Converse',
 				name: 'Converse Chuck 70',
 				description: 'Updated Converse Chuck 70 with modern style elements.',
@@ -199,7 +199,7 @@ export const newArrival = [
 				rating: 5,
 			},
 			{
-				productId: 12,
+				productId: '12',
 				brand: 'New Balance',
 				name: 'New Balance Fresh Foam 1080v11',
 				description:
@@ -219,11 +219,11 @@ export const newArrival = [
 		],
 	},
 	{
-		id: 3,
+		id: '3',
 		subCategory: 'Sandals',
 		product: [
 			{
-				productId: 13,
+				productId: '13',
 				brand: 'Ecco',
 				name: 'Ecco Yucatan Sandal',
 				description: 'Ecco Yucatan Sandal for outdoor adventures and comfort.',
@@ -240,7 +240,7 @@ export const newArrival = [
 				rating: 1,
 			},
 			{
-				productId: 14,
+				productId: '14',
 				brand: 'Teva',
 				name: 'Teva Original Universal Sandal',
 				description:
@@ -258,7 +258,7 @@ export const newArrival = [
 				rating: 2,
 			},
 			{
-				productId: 15,
+				productId: '15',
 				brand: 'Birkenstock',
 				name: 'Birkenstock Arizona Sandal',
 				description:
@@ -276,7 +276,7 @@ export const newArrival = [
 				rating: 3,
 			},
 			{
-				productId: 16,
+				productId: '16',
 				brand: 'Chaco',
 				name: 'Chaco Z/Cloud Sandal',
 				description:
@@ -294,7 +294,7 @@ export const newArrival = [
 				rating: 4,
 			},
 			{
-				productId: 17,
+				productId: '17',
 				brand: 'Keen',
 				name: 'Keen Newport H2 Sandal',
 				description: 'Keen Newport H2 Sandal for water-friendly adventures.',
@@ -311,7 +311,7 @@ export const newArrival = [
 				rating: 4,
 			},
 			{
-				productId: 18,
+				productId: '18',
 				brand: 'Merrell',
 				name: 'Merrell Terran Convertible II Sandal',
 				description:
@@ -331,11 +331,11 @@ export const newArrival = [
 		],
 	},
 	{
-		id: 4,
+		id: '4',
 		subCategory: 'Ladies Flats',
 		product: [
 			{
-				productId: 19,
+				productId: '19',
 				brand: 'Tory Burch',
 				name: 'Tory Burch Minnie Travel Ballet Flat',
 				description:
@@ -353,7 +353,7 @@ export const newArrival = [
 				rating: 4,
 			},
 			{
-				productId: 20,
+				productId: '20',
 				brand: 'Sam Edelman',
 				name: 'Sam Edelman Felicia Flat',
 				description:
@@ -371,7 +371,7 @@ export const newArrival = [
 				rating: 2,
 			},
 			{
-				productId: 21,
+				productId: '21',
 				brand: 'Cole Haan',
 				name: 'Cole Haan Tali Bow Ballet Flat',
 				description:
@@ -389,7 +389,7 @@ export const newArrival = [
 				rating: 4,
 			},
 			{
-				productId: 22,
+				productId: '22',
 				brand: 'Nine West',
 				name: 'Nine West SpeakUp Flat',
 				description: 'Nine West SpeakUp Flat for a modern and chic look.',
@@ -406,7 +406,7 @@ export const newArrival = [
 				rating: 2,
 			},
 			{
-				productId: 23,
+				productId: '23',
 				brand: 'Steve Madden',
 				name: 'Steve Madden Feather Loafer Flat',
 				description:
@@ -424,7 +424,7 @@ export const newArrival = [
 				rating: 5,
 			},
 			{
-				productId: 24,
+				productId: '24',
 				brand: 'Clarks',
 				name: 'Clarks Gracelin Lola Flat',
 				description:
@@ -444,11 +444,11 @@ export const newArrival = [
 		],
 	},
 	{
-		id: 5,
+		id: '5',
 		subCategory: 'Formals',
 		product: [
 			{
-				productId: 25,
+				productId: '25',
 				brand: 'Allen Edmonds',
 				name: 'Allen Edmonds Park Avenue Cap-Toe Oxford',
 				description:
@@ -466,7 +466,7 @@ export const newArrival = [
 				rating: 5,
 			},
 			{
-				productId: 26,
+				productId: '26',
 				brand: 'Johnston & Murphy',
 				name: 'Johnston & Murphy Melton Cap Toe Oxford',
 				description:
@@ -484,7 +484,7 @@ export const newArrival = [
 				rating: 4,
 			},
 			{
-				productId: 27,
+				productId: '27',
 				brand: 'Florsheim',
 				name: 'Florsheim Lexington Cap Toe Oxford',
 				description:
@@ -502,7 +502,7 @@ export const newArrival = [
 				rating: 2,
 			},
 			{
-				productId: 28,
+				productId: '28',
 				brand: 'ECCO',
 				name: 'ECCO Helsinki Plain Toe Dress Oxford',
 				description:
@@ -520,7 +520,7 @@ export const newArrival = [
 				rating: 1,
 			},
 			{
-				productId: 29,
+				productId: '29',
 				brand: 'Dockers',
 				name: 'Dockers Gordon Leather Oxford Dress Shoe',
 				description:
@@ -538,7 +538,7 @@ export const newArrival = [
 				rating: 3,
 			},
 			{
-				productId: 30,
+				productId: '30',
 				brand: 'Kenneth Cole',
 				name: 'Kenneth Cole New York Cap Toe Oxford',
 				description:
@@ -558,11 +558,11 @@ export const newArrival = [
 		],
 	},
 	{
-		id: 6,
+		id: '6',
 		subCategory: 'Accessories',
 		product: [
 			{
-				productId: 31,
+				productId: '31',
 				brand: 'Ray-Ban',
 				name: 'Ray-Ban Classic Aviator Sunglasses',
 				description: 'Ray-Ban Classic Aviator Sunglasses for timeless style.',
@@ -579,7 +579,7 @@ export const newArrival = [
 				rating: 4,
 			},
 			{
-				productId: 32,
+				productId: '32',
 				brand: 'Fossil',
 				name: 'Fossil Gen 5 Smartwatch',
 				description:
@@ -597,7 +597,7 @@ export const newArrival = [
 				rating: 5,
 			},
 			{
-				productId: 33,
+				productId: '33',
 				brand: 'Michael Kors',
 				name: 'Michael Kors Jet Set Travel Tote',
 				description:
@@ -615,7 +615,7 @@ export const newArrival = [
 				rating: 1,
 			},
 			{
-				productId: 34,
+				productId: '34',
 				brand: 'Kate Spade',
 				name: 'Kate Spade New York Wallet',
 				description:
@@ -633,7 +633,7 @@ export const newArrival = [
 				rating: 3,
 			},
 			{
-				productId: 35,
+				productId: '35',
 				brand: 'BOSE',
 				name: 'BOSE QuietComfort Noise Cancelling Headphones',
 				description:
@@ -651,7 +651,7 @@ export const newArrival = [
 				rating: 2,
 			},
 			{
-				productId: 36,
+				productId: '36',
 				brand: 'Gucci',
 				name: 'Gucci GG Marmont Belt',
 				description: 'Gucci GG Marmont Belt for luxury and iconic style.',

@@ -13,7 +13,7 @@ const PageLayout: FC<PageLayoutProps> = ({ children }) => {
 		<Flex direction='column' maxW='100vw'>
 			<NavbarTop />
 			<Navbar />
-			<Flex w='100vw' mx='auto'>
+			<Flex maxW='1280px' mx='auto' w='full'>
 				<Body>{children}</Body>
 			</Flex>
 		</Flex>
