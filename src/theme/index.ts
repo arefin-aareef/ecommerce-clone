@@ -16,6 +16,8 @@ const config: ThemeConfig = {
 
 // 3. extend the theme
 const colors = {
+	primaryWhite: '#ffffff',
+	secondaryBlack: '#000000',
 	navBg: '#f7f7f7',
 	footerBg: '#141414',
 	footerText: '#969696',
@@ -23,6 +25,7 @@ const colors = {
 	currentPrice: '#e7040f',
 	sectionCardTitleColor: '#9d9e9d',
 	sidebarHoverColor: '#fafafa',
+	cartSidebarTextColor: '#2d2d2d',
 };
 
 // 6. Add Breakpoints
