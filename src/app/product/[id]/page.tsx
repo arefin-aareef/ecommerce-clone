@@ -25,7 +25,7 @@ const ProductPage: NextPage<ProductPageProps> = ({ params }) => {
 		}
 	});
 
-	console.log(singleProduct);
+	// console.log(singleProduct);
 
 	return (
 		<Flex w='full'>

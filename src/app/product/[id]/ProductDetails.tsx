@@ -6,18 +6,9 @@ import {
 	Flex,
 	Grid,
 	Image,
-	Modal,
-	ModalBody,
-	ModalCloseButton,
-	ModalContent,
-	ModalFooter,
-	ModalHeader,
-	ModalOverlay,
 	Text,
-	useDisclosure,
 } from '@chakra-ui/react';
 import React, { FC, useState } from 'react';
-import { RxRulerHorizontal } from 'react-icons/rx';
 
 type ProductDetailsProps = {
 	singleProduct: any;
@@ -48,10 +39,10 @@ const ProductDetails: FC<ProductDetailsProps> = ({ singleProduct }) => {
 	const priceDetails = (
 		<Flex gap={4} alignItems='center'>
 			<Text as='s' fontSize='1.375rem' textColor='previousPrice'>
-				Tk {singleProduct.previousPrice}
+				Tk {singleProduct.previousPrice.toFixed(2)}
 			</Text>
 			<Text textColor='currentPrice' fontSize='1.375rem'>
-				Tk {singleProduct.currentPrice}
+				Tk {singleProduct.currentPrice.toFixed(2)}
 			</Text>
 			<Text
 				bg='currentPrice'
@@ -64,6 +55,53 @@ const ProductDetails: FC<ProductDetailsProps> = ({ singleProduct }) => {
 			</Text>
 		</Flex>
 	);
+
+	const colorInfo = (
+		<Flex direction='column' gap={3}>
+			<Flex gap={1}>
+				<Text fontSize='0.875em' fontWeight='600'>
+					Color
+				</Text>
+				<Text textColor='red'>*</Text>
+			</Flex>
+			<Box
+				border={1}
+				borderColor='productColorBorderColor'
+				h={10}
+				w={10}
+				bg={singleProduct.color[0]}
+				rounded='full'
+			/>
+		</Flex>
+	);
+
+	const promoCode = (
+		<Flex direction='column' gap={3}>
+			<Flex gap={1}>
+				<Text fontSize='0.875em' fontWeight='600'>
+					Promocode
+				</Text>
+				<Text textColor='red'>*</Text>
+			</Flex>
+			<Text border='1px' borderColor='productColorBorderColor' p={2}>
+				{singleProduct.promoCode}
+			</Text>
+		</Flex>
+	);
+
+	const [quantity, setQuantity] = useState(1);
+
+	const decreaseQuantity = () => {
+		if (quantity > 1) {
+			setQuantity(quantity - 1);
+		}
+	};
+
+	// const increaseQuantity = () => {
+	// 	if (quantity < {singleProduct.Quantity}) {
+	// 		setQuantity(quantity + 1);
+	// 	}
+	// };
 
 	return (
 		<Flex w='full' direction='column'>
@@ -90,6 +128,43 @@ const ProductDetails: FC<ProductDetailsProps> = ({ singleProduct }) => {
 					</Text>
 
 					<SizeChart singleProduct={singleProduct} />
+
+					{colorInfo}
+
+					{promoCode}
+
+					<Flex direction='column' gap={3}>
+						<Text fontSize='0.875em' fontWeight='600'>
+							Quantity:
+						</Text>
+						<Flex alignItems='center'>
+							<Button
+								bg='transparent'
+								border='1px'
+								borderColor='productColorBorderColor'
+								rounded='unset'
+								fontSize='24px'
+								onClick={decreaseQuantity}
+							>
+								<Text px={0.5} pb={1}>
+									-
+								</Text>
+							</Button>
+							<Text border='1px' borderColor='productColorBorderColor' px={8} py='7px'>
+								{quantity}
+							</Text>
+							<Button
+								bg='transparent'
+								border='1px'
+								borderColor='productColorBorderColor'
+								rounded='unset'
+								fontSize='20px'
+								// onClick={increaseQuantity}
+							>
+								<Text pb={1}>+</Text>
+							</Button>
+						</Flex>
+					</Flex>
 				</Flex>
 			</Grid>
 		</Flex>

@@ -31,8 +31,13 @@ const FooterBottomPart: FC<FooterBottomPartProps> = ({}) => {
 			</Text>
 			<Flex w='full' justifyContent='center' gap={3}>
 				{footerGatewayPic.map(item => (
-					<Box cursor='pointer' key={item.id}>
-						<Image width='24px' height='24px' src={item.href} alt={item.alt} />
+					<Box cursor='pointer' key={item?.id}>
+						<Image
+							width='24px'
+							height='24px'
+							src={item?.href}
+							alt={item?.alt}
+						/>
 					</Box>
 				))}
 			</Flex>

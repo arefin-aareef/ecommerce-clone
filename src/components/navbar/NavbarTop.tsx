@@ -1,5 +1,5 @@
-'use client'
-import { Flex, Image } from '@chakra-ui/react';
+'use client';
+import { Center, Flex, Image } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import NavbarTopRight from './NavbarTopRight';
 import NavbarTopLeft from './NavbarTopLeft';
@@ -8,11 +8,9 @@ type NavbarTopProps = {};
 
 const NavbarTop: FC<NavbarTopProps> = ({}) => {
 	return (
-		<Flex
+		<Center
 			w='full'
 			bgColor={{ base: 'white', xl: 'navBg' }}
-			justifyContent='center'
-			alignItems='center'
 			py={{ base: 3, xl: 7 }}
 			px={{ base: 5, md: 20, xl: 5 }}
 		>
@@ -23,7 +21,7 @@ const NavbarTop: FC<NavbarTopProps> = ({}) => {
 				</Flex>
 				<NavbarTopRight />
 			</Flex>
-		</Flex>
+		</Center>
 	);
 };
 
