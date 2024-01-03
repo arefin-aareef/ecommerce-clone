@@ -1,0 +1,1 @@
+export const sizeModal = '/modal/modal.jpg'

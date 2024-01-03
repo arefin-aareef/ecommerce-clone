@@ -1,4 +1,21 @@
-import { Box, Flex, Grid, Image, Text } from '@chakra-ui/react';
+import SizeChart from '@/components/size-chart/SizeChart';
+import { sizeModal } from '@/lib/Constants';
+import {
+	Box,
+	Button,
+	Flex,
+	Grid,
+	Image,
+	Modal,
+	ModalBody,
+	ModalCloseButton,
+	ModalContent,
+	ModalFooter,
+	ModalHeader,
+	ModalOverlay,
+	Text,
+	useDisclosure,
+} from '@chakra-ui/react';
 import React, { FC, useState } from 'react';
 import { RxRulerHorizontal } from 'react-icons/rx';
 
@@ -12,11 +29,6 @@ const ProductDetails: FC<ProductDetailsProps> = ({ singleProduct }) => {
 			singleProduct.previousPrice) *
 			100
 	);
-	const [selectedSize, setSelectedSize] = useState(singleProduct.size[0]);
-
-	const handleSizeSelect = (size: number) => {
-		setSelectedSize(size);
-	};
 
 	const productInfo = (
 		<Grid templateColumns='1fr 1fr' w='50%'>
@@ -53,45 +65,6 @@ const ProductDetails: FC<ProductDetailsProps> = ({ singleProduct }) => {
 		</Flex>
 	);
 
-	const size = (
-		<Flex direction='column' gap={3}>
-			<Flex justifyContent='space-between' w='full'>
-				<Flex gap={1}>
-					<Text fontSize='0.875em' fontWeight='600'>
-						Size
-					</Text>
-					<Text textColor='red'>*</Text>
-				</Flex>
-				<Flex as='button' alignItems='center' gap={1}>
-					<RxRulerHorizontal size={20} />
-					<Text>SIZE CHART</Text>
-				</Flex>
-			</Flex>
-			<Flex gap={3}>
-				{singleProduct.size.map((size: number) => (
-					<Box
-						key={size}
-						bg={size === selectedSize ? 'black' : 'white'}
-						textColor={size === selectedSize ? 'primaryWhite' : 'black'}
-						borderWidth={size === selectedSize ? '1px' : '1px'}
-						borderColor={
-							size === selectedSize ? 'black' : 'productCardBorderColor'
-						}
-						h={10}
-						w={10}
-						rounded='full'
-						cursor='pointer'
-						onClick={() => handleSizeSelect(size)}
-					>
-						<Text textAlign='center' pt={2}>
-							{size}
-						</Text>
-					</Box>
-				))}
-			</Flex>
-		</Flex>
-	);
-
 	return (
 		<Flex w='full' direction='column'>
 			<Grid templateColumns='1fr 1fr' gap={12}>
@@ -116,9 +89,7 @@ const ProductDetails: FC<ProductDetailsProps> = ({ singleProduct }) => {
 						{Array(5).fill(singleProduct.description).join('')}
 					</Text>
 
-					{size}
-
-
+					<SizeChart singleProduct={singleProduct} />
 				</Flex>
 			</Grid>
 		</Flex>
