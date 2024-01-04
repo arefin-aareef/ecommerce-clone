@@ -8,7 +8,7 @@ type RecentPostsProps = {};
 
 const RecentPosts: FC<RecentPostsProps> = ({}) => {
 	return (
-		<Flex w='full' direction='column'>
+		<Flex w='full' direction='column' gap={4}>
 			<SectionHeader>Recent Posts</SectionHeader>
 			<Flex direction={{base: 'column', md: 'row'}} gap={{base: 1, md: 7}}>
 				{recentPostCollection.map((item, i) => (

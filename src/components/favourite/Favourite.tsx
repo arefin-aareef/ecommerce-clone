@@ -13,7 +13,7 @@ type FavouriteProps = {};
 
 const Favourite: FC<FavouriteProps> = ({}) => {
 	return (
-		<Flex w='full' direction='column' maxW='1280px'>
+		<Flex w='full' direction='column' maxW='1280px' gap={4}>
 			<SectionHeader>PICK YOUR FAVORITES</SectionHeader>
 
 			<Flex w='full' maxW='100vw' minW='100%'>

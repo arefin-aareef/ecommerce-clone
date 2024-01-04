@@ -16,12 +16,12 @@ const BataInstagram: FC<BataInstagramProps> = ({}) => {
 
 
   return (
-		<Flex w='full' direction='column' gap={2}>
+		<Flex w='full' direction='column' gap={4}>
 			<SectionHeader>Bata On Instagram</SectionHeader>
 
 			<Text textColor='red'>#BATABANGLADESH</Text>
 
-			<Flex w='full' maxW='100vw' minW='100%' py={8}>
+			<Flex w='full' maxW='100vw' minW='100%'>
 				<Swiper
 					style={{ width: '100%', maxWidth: '100vw' }}
 					slidesPerView={5}
@@ -33,7 +33,7 @@ const BataInstagram: FC<BataInstagramProps> = ({}) => {
 				>
 					{bataOnInstagram.map((item, i) => (
 						<SwiperSlide key={i} style={{ maxWidth: '100vw' }}>
-							<Image pb={10} src={item.img} />
+							<Image pb={8} src={item.img} />
 						</SwiperSlide>
 					))}
 				</Swiper>

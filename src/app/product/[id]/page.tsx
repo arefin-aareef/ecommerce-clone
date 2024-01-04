@@ -17,21 +17,15 @@ const ProductPage: NextPage<ProductPageProps> = ({ params }) => {
 	let singleProduct: any = null;
 
 	newArrival.forEach(category => {
-		const foundProduct = category.product.find(
-			item => item.productId === id
-		);
+		const foundProduct = category.product.find(item => item.productId === id);
 		if (foundProduct) {
 			singleProduct = foundProduct;
 		}
 	});
 
-	// console.log(singleProduct);
-
 	return (
 		<Flex w='full'>
-			{singleProduct && (
-				<ProductDetails singleProduct={singleProduct} />
-			)}
+			{singleProduct && <ProductDetails singleProduct={singleProduct} />}
 		</Flex>
 	);
 };

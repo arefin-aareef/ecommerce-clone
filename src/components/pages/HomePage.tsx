@@ -13,7 +13,7 @@ type HomePageProps = {};
 
 const HomePage: FC<HomePageProps> = ({}) => {
 	return (
-		<Flex direction='column' w='full'>
+		<Flex direction='column' w='full' gap={4}>
 			<Banner />
 			<JustLanded />
 			<HandPicked />

@@ -13,9 +13,9 @@ type FeaturedProductProps = {};
 
 const FeaturedProduct: FC<FeaturedProductProps> = ({}) => {
 	return (
-		<Flex maxW='1280px' direction='column' w='full' pb={12}>
+		<Flex maxW='1280px' direction='column' w='full' gap={4}>
 			<SectionHeader>Featured Products</SectionHeader>
-			<Flex w='full' maxW='100vw' minW='100%' py={8}>
+			<Flex w='full' maxW='100vw' minW='100%'>
 				<Swiper
 					style={{ width: '100%', maxWidth: '100vw' }}
 					slidesPerView={5}

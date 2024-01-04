@@ -13,7 +13,7 @@ type HandPickedProps = {};
 
 const HandPicked: FC<HandPickedProps> = ({}) => {
 	return (
-		<Flex w='full' direction='column' maxW='1280px'>
+		<Flex w='full' direction='column' maxW='1280px' gap={4}>
 			<SectionHeader>OUR HAND PICKED COLLECTION FOR YOU</SectionHeader>
 
 			<Flex w='full' maxW='100vw' minW='100%'>

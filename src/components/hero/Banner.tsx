@@ -10,7 +10,6 @@ const Banner: FC<BannerProps> = ({}) => {
 		<Grid
 			templateColumns={{base: 'repeat(2, 1fr)' , md: 'repeat(4, 1fr)' }}
 			gap={{ base: 4, md: 6 }}
-			py={12}
 			h='fit-content'
 		>
 			{bannerImages.map(item => (

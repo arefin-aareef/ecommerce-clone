@@ -18,7 +18,7 @@ export const newArrival = [
 				previousPrice: 11550,
 				currentPrice: 9786,
 				size: [6, 7, 8, 9, 10, 11],
-				Quantity: 10,
+				quantity: 10,
 				rating: 1,
 			},
 			{
@@ -36,7 +36,7 @@ export const newArrival = [
 				previousPrice: 7999,
 				currentPrice: 6499,
 				size: [5, 6, 7, 8, 9, 10],
-				Quantity: 20,
+				quantity: 20,
 				rating: 2,
 			},
 			{
@@ -53,7 +53,7 @@ export const newArrival = [
 				previousPrice: 6999,
 				currentPrice: 5999,
 				size: [6, 7, 8, 9, 10],
-				Quantity: 15,
+				quantity: 15,
 				rating: 3,
 			},
 			{
@@ -70,7 +70,7 @@ export const newArrival = [
 				previousPrice: 8499,
 				currentPrice: 7499,
 				size: [7, 8, 9, 10],
-				Quantity: 12,
+				quantity: 12,
 				rating: 3,
 			},
 			{
@@ -87,7 +87,7 @@ export const newArrival = [
 				previousPrice: 5999,
 				currentPrice: 4999,
 				size: [5, 6, 7, 8, 9],
-				Quantity: 18,
+				quantity: 18,
 				rating: 4,
 			},
 			{
@@ -104,7 +104,7 @@ export const newArrival = [
 				previousPrice: 7499,
 				currentPrice: 6999,
 				size: [7, 8, 9, 10, 11],
-				Quantity: 14,
+				quantity: 14,
 				rating: 5,
 			},
 		],
@@ -127,7 +127,7 @@ export const newArrival = [
 				previousPrice: 8999,
 				currentPrice: 7499,
 				size: [5, 6, 7, 8, 9, 10],
-				Quantity: 15,
+				quantity: 15,
 				rating: 4,
 			},
 			{
@@ -144,7 +144,7 @@ export const newArrival = [
 				previousPrice: 9999,
 				currentPrice: 8999,
 				size: [6, 7, 8, 9, 10],
-				Quantity: 20,
+				quantity: 20,
 				rating: 3,
 			},
 			{
@@ -161,7 +161,7 @@ export const newArrival = [
 				previousPrice: 7999,
 				currentPrice: 6999,
 				size: [7, 8, 9, 10],
-				Quantity: 18,
+				quantity: 18,
 				rating: 2,
 			},
 			{
@@ -178,7 +178,7 @@ export const newArrival = [
 				previousPrice: 8499,
 				currentPrice: 7499,
 				size: [8, 9, 10],
-				Quantity: 14,
+				quantity: 14,
 				rating: 4,
 			},
 			{
@@ -195,7 +195,7 @@ export const newArrival = [
 				previousPrice: 6999,
 				currentPrice: 5999,
 				size: [6, 7, 8, 9],
-				Quantity: 16,
+				quantity: 16,
 				rating: 5,
 			},
 			{
@@ -213,7 +213,7 @@ export const newArrival = [
 				previousPrice: 9999,
 				currentPrice: 8999,
 				size: [7, 8, 9, 10],
-				Quantity: 20,
+				quantity: 20,
 				rating: 2,
 			},
 		],
@@ -236,7 +236,7 @@ export const newArrival = [
 				previousPrice: 7999,
 				currentPrice: 6999,
 				size: [7, 8, 9, 10],
-				Quantity: 20,
+				quantity: 20,
 				rating: 1,
 			},
 			{
@@ -254,7 +254,7 @@ export const newArrival = [
 				previousPrice: 6999,
 				currentPrice: 5999,
 				size: [8, 9, 10],
-				Quantity: 15,
+				quantity: 15,
 				rating: 2,
 			},
 			{
@@ -272,7 +272,7 @@ export const newArrival = [
 				previousPrice: 8999,
 				currentPrice: 7999,
 				size: [6, 7, 8, 9, 10],
-				Quantity: 18,
+				quantity: 18,
 				rating: 3,
 			},
 			{
@@ -290,7 +290,7 @@ export const newArrival = [
 				previousPrice: 8499,
 				currentPrice: 7499,
 				size: [7, 8, 9],
-				Quantity: 12,
+				quantity: 12,
 				rating: 4,
 			},
 			{
@@ -307,7 +307,7 @@ export const newArrival = [
 				previousPrice: 7999,
 				currentPrice: 6999,
 				size: [8, 9, 10],
-				Quantity: 16,
+				quantity: 16,
 				rating: 4,
 			},
 			{
@@ -325,7 +325,7 @@ export const newArrival = [
 				previousPrice: 7499,
 				currentPrice: 6499,
 				size: [7, 8, 9],
-				Quantity: 14,
+				quantity: 14,
 				rating: 5,
 			},
 		],
@@ -349,7 +349,7 @@ export const newArrival = [
 				previousPrice: 24999,
 				currentPrice: 19999,
 				size: [5, 6, 7, 8, 9],
-				Quantity: 20,
+				quantity: 20,
 				rating: 4,
 			},
 			{
@@ -367,7 +367,7 @@ export const newArrival = [
 				previousPrice: 12999,
 				currentPrice: 9999,
 				size: [6, 7, 8],
-				Quantity: 15,
+				quantity: 15,
 				rating: 2,
 			},
 			{
@@ -385,7 +385,7 @@ export const newArrival = [
 				previousPrice: 19999,
 				currentPrice: 15999,
 				size: [7, 8, 9],
-				Quantity: 18,
+				quantity: 18,
 				rating: 4,
 			},
 			{
@@ -402,7 +402,7 @@ export const newArrival = [
 				previousPrice: 8999,
 				currentPrice: 6999,
 				size: [6, 7, 8],
-				Quantity: 16,
+				quantity: 16,
 				rating: 2,
 			},
 			{
@@ -420,7 +420,7 @@ export const newArrival = [
 				previousPrice: 10999,
 				currentPrice: 8999,
 				size: [7, 8, 9],
-				Quantity: 14,
+				quantity: 14,
 				rating: 5,
 			},
 			{
@@ -438,7 +438,7 @@ export const newArrival = [
 				previousPrice: 7999,
 				currentPrice: 5999,
 				size: [6, 7, 8],
-				Quantity: 12,
+				quantity: 12,
 				rating: 4,
 			},
 		],
@@ -462,7 +462,7 @@ export const newArrival = [
 				previousPrice: 39999,
 				currentPrice: 34999,
 				size: [8, 9, 10, 11],
-				Quantity: 20,
+				quantity: 20,
 				rating: 5,
 			},
 			{
@@ -480,7 +480,7 @@ export const newArrival = [
 				previousPrice: 29999,
 				currentPrice: 24999,
 				size: [7, 8, 9],
-				Quantity: 15,
+				quantity: 15,
 				rating: 4,
 			},
 			{
@@ -498,7 +498,7 @@ export const newArrival = [
 				previousPrice: 27999,
 				currentPrice: 22999,
 				size: [8, 9, 10],
-				Quantity: 18,
+				quantity: 18,
 				rating: 2,
 			},
 			{
@@ -516,7 +516,7 @@ export const newArrival = [
 				previousPrice: 19999,
 				currentPrice: 16999,
 				size: [9, 10, 11],
-				Quantity: 16,
+				quantity: 16,
 				rating: 1,
 			},
 			{
@@ -534,7 +534,7 @@ export const newArrival = [
 				previousPrice: 8999,
 				currentPrice: 7499,
 				size: [7, 8, 9],
-				Quantity: 14,
+				quantity: 14,
 				rating: 3,
 			},
 			{
@@ -552,7 +552,7 @@ export const newArrival = [
 				previousPrice: 24999,
 				currentPrice: 19999,
 				size: [8, 9, 10],
-				Quantity: 12,
+				quantity: 12,
 				rating: 4,
 			},
 		],
@@ -575,7 +575,7 @@ export const newArrival = [
 				previousPrice: 14999,
 				currentPrice: 12999,
 				size: [9],
-				Quantity: 25,
+				quantity: 25,
 				rating: 4,
 			},
 			{
@@ -593,7 +593,7 @@ export const newArrival = [
 				previousPrice: 24999,
 				currentPrice: 21999,
 				size: [9],
-				Quantity: 20,
+				quantity: 20,
 				rating: 5,
 			},
 			{
@@ -611,7 +611,7 @@ export const newArrival = [
 				previousPrice: 29999,
 				currentPrice: 25999,
 				size: [9],
-				Quantity: 18,
+				quantity: 18,
 				rating: 1,
 			},
 			{
@@ -629,7 +629,7 @@ export const newArrival = [
 				previousPrice: 9999,
 				currentPrice: 7999,
 				size: [9],
-				Quantity: 22,
+				quantity: 22,
 				rating: 3,
 			},
 			{
@@ -647,7 +647,7 @@ export const newArrival = [
 				previousPrice: 34999,
 				currentPrice: 29999,
 				size: [9],
-				Quantity: 15,
+				quantity: 15,
 				rating: 2,
 			},
 			{
@@ -664,7 +664,7 @@ export const newArrival = [
 				previousPrice: 49999,
 				currentPrice: 42999,
 				size: [9],
-				Quantity: 10,
+				quantity: 10,
 				rating: 5,
 			},
 		],

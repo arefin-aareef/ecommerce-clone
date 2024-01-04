@@ -5,9 +5,9 @@ import BasePadding from '@/components/util/base-padding/BasePadding'
 export default function Home() {
   return (
 		<HomePageLayout>
-			{/* <BasePadding> */}
+			<BasePadding>
         <HomePage />
-      {/* </BasePadding> */}
+      </BasePadding>
 		</HomePageLayout>
 	);
 }

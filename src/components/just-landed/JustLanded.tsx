@@ -6,7 +6,6 @@ import {
 	TabPanel,
 	TabPanels,
 	Tabs,
-	Text,
 } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import { newArrival } from '../data/NewArrival';
@@ -20,27 +19,13 @@ import SectionHeader from '../util/section-header/SectionHeader';
 type JustLandedProps = {};
 
 const JustLanded: FC<JustLandedProps> = ({}) => {
-	// const breakpoints = {
-	// 	0: {
-	// 		slidesPerView: 2,
-	// 	},
-	// 	780: {
-	// 		slidesPerView: 3,
-	// 	},
-	// 	840: {
-	// 		slidesPerView: 4,
-	// 	},
-	// 	1200: {
-	// 		slidesPerView: 5,
-	// 	},
-	// };
-
 	return (
 		<Flex direction='column' gap={4} maxW='1280px' w='full'>
 			<SectionHeader>JUST LANDED</SectionHeader>
-			<Tabs variant='soft-rounded' colorScheme='gray'>
+			<Tabs variant='soft-rounded' colorScheme='gray' gap={4}>
 				<Flex w={{ base: '360px', md: 'full' }}>
-					<TabList pb={6} w='fit-content' mx='auto' overflowX='auto'>
+					<TabList 
+					w='fit-content' mx='auto' overflowX='auto'>
 						{newArrival.map(item => (
 							<Tab key={item.id} w='auto' px={6} py={2}>
 								{item.subCategory}
@@ -57,8 +42,6 @@ const JustLanded: FC<JustLandedProps> = ({}) => {
 									<Swiper
 										style={{ width: '100%', maxWidth: '100vw' }}
 										slidesPerView={5}
-										// slidesPerView='auto'
-										// breakpoints={breakpoints}
 										spaceBetween={2}
 										pagination={{
 											clickable: true,
@@ -67,7 +50,7 @@ const JustLanded: FC<JustLandedProps> = ({}) => {
 									>
 										{item.product.map((product, i) => (
 											<SwiperSlide key={i} style={{ maxWidth: '100vw' }}>
-												<Flex pb={12} w='full'>
+												<Flex pb={8} w='full'>
 													<ProductCard product={product} />
 												</Flex>
 											</SwiperSlide>

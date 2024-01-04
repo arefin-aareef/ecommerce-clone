@@ -8,7 +8,7 @@ type HandPickedCardProps = {
 
 const SectionCard: FC<HandPickedCardProps> = ({ item, buttonTitle }) => {
 	return (
-		<Flex w='full' py={{base: 4, md: 12}} direction='column' gap={3}>
+		<Flex w='full' direction='column' gap={3}>
 			<Flex w='full' overflow='hidden' cursor='pointer'>
 				<Image
 					_hover={{
