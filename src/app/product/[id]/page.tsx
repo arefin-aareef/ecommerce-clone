@@ -1,5 +1,5 @@
 'use client';
-import { newArrival } from '@/components/data/NewArrival';
+import { newArrival } from '@/components/util/data/NewArrival';
 import { Flex, Text } from '@chakra-ui/react';
 import { NextPage } from 'next';
 import React, { FC } from 'react';

@@ -6,8 +6,8 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import SectionHeader from '../util/section-header/SectionHeader';
 import { Flex } from '@chakra-ui/react';
-import { favouriteCollection } from '../data/SectionCardCollection';
-import SectionCard from '../hand-picked/SectionCard';
+import { favouriteCollection } from '../util/data/SectionCardCollection';
+import SectionCard from './SectionCard';
 
 type FavouriteProps = {};
 

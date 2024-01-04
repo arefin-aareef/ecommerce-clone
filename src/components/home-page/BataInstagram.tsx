@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { Flex, Image, Text } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import SectionHeader from '../util/section-header/SectionHeader';
@@ -6,16 +6,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import { bataOnInstagram } from '../data/SectionCardCollection';
+import { bataOnInstagram } from '../util/data/SectionCardCollection';
 
-type BataInstagramProps = {
-
-}
+type BataInstagramProps = {};
 
 const BataInstagram: FC<BataInstagramProps> = ({}) => {
-
-
-  return (
+	return (
 		<Flex w='full' direction='column' gap={4}>
 			<SectionHeader>Bata On Instagram</SectionHeader>
 

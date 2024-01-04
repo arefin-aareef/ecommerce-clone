@@ -1,13 +1,13 @@
 import { Flex } from '@chakra-ui/react';
 import React, { FC } from 'react';
-import Banner from '../hero/Banner';
-import JustLanded from '../just-landed/JustLanded';
-import HandPicked from '../hand-picked/HandPicked';
-import FeaturedProduct from '../featured-product/FeaturedProduct';
-import BestSeller from '../best-seller/BestSeller';
-import Favourite from '../favourite/Favourite';
-import RecentPosts from '../recent-posts/RecentPosts';
-import BataInstagram from '../bata-instagram/BataInstagram';
+import Banner from '../home-page/Banner';
+import JustLanded from '../home-page/JustLanded';
+import HandPicked from '../home-page/HandPicked';
+import FeaturedProduct from '../home-page/FeaturedProduct';
+import BestSeller from '../home-page/BestSeller';
+import Favourite from '../home-page/Favourite';
+import RecentPosts from '../home-page/RecentPosts';
+import BataInstagram from '../home-page/BataInstagram';
 
 type HomePageProps = {};
 

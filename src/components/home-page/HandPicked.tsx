@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import { handPickedCollection } from '../data/SectionCardCollection';
+import { handPickedCollection } from '../util/data/SectionCardCollection';
 import SectionCard from './SectionCard';
 
 type HandPickedProps = {};

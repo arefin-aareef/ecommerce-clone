@@ -2,7 +2,7 @@
 import { Divider, Flex } from '@chakra-ui/react';
 import React, { FC } from 'react';
 import NavItem from './NavItem';
-import { navCategories } from '../data/NavbarData';
+import { navCategories } from '../util/data/NavbarData';
 
 type NavbarProps = {};
 

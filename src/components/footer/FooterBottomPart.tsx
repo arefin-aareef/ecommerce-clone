@@ -1,7 +1,7 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react';
 import React, { FC } from 'react';
-import { footerIcon } from '../data/FooterIcons';
-import { footerGatewayPic } from '../data/FooterGatewayPic';
+import { footerIcon } from '../util/data/FooterIcons';
+import { footerGatewayPic } from '../util/data/FooterGatewayPic';
 
 type FooterBottomPartProps = {};
 

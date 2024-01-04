@@ -5,7 +5,7 @@ import Body from './Body';
 import Navbar from '../navbar/Navbar';
 import NavbarTop from '../navbar/NavbarTop';
 import Footer from '../footer/Footer';
-import Hero from '../hero/Hero';
+import Hero from '../home-page/Hero';
 
 type HomePageLayoutProps = {
 	children: ReactNode;

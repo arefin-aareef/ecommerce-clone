@@ -8,12 +8,12 @@ import {
 	Tabs,
 } from '@chakra-ui/react';
 import React, { FC } from 'react';
-import { newArrival } from '../data/NewArrival';
+import { newArrival } from '../util/data/NewArrival';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import ProductCard from '../product-card/ProductCard';
+import ProductCard from './ProductCard';
 import SectionHeader from '../util/section-header/SectionHeader';
 
 type JustLandedProps = {};
@@ -24,8 +24,7 @@ const JustLanded: FC<JustLandedProps> = ({}) => {
 			<SectionHeader>JUST LANDED</SectionHeader>
 			<Tabs variant='soft-rounded' colorScheme='gray' gap={4}>
 				<Flex w={{ base: '360px', md: 'full' }}>
-					<TabList 
-					w='fit-content' mx='auto' overflowX='auto'>
+					<TabList w='fit-content' mx='auto' overflowX='auto'>
 						{newArrival.map(item => (
 							<Tab key={item.id} w='auto' px={6} py={2}>
 								{item.subCategory}

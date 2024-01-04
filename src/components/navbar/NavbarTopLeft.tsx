@@ -1,35 +1,35 @@
-'use client'
+'use client';
 import {
-  Drawer,
-  DrawerBody,
-  DrawerCloseButton,
-  DrawerContent,
-  DrawerOverlay,
-  Flex,
-  IconButton,
-  Text,
-  useDisclosure,
+	Drawer,
+	DrawerBody,
+	DrawerCloseButton,
+	DrawerContent,
+	DrawerOverlay,
+	Flex,
+	IconButton,
+	Text,
+	useDisclosure,
 } from '@chakra-ui/react';
 import React, { FC, useRef, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { CiSearch, CiLocationOn } from 'react-icons/ci';
-import SubcategoryDrawer from './SubcategoryDrawer'; 
-import { navCategories } from '../data/NavbarData';
+import SubcategoryDrawer from './SubcategoryDrawer';
+import { navCategories } from '../util/data/NavbarData';
 
 type NavbarTopProps = {};
 
 const NavbarTop: FC<NavbarTopProps> = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = useRef<HTMLButtonElement>(null);
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+	const { isOpen, onOpen, onClose } = useDisclosure();
+	const btnRef = useRef<HTMLButtonElement>(null);
+	const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  const openSubcategoryDrawer = (category: string) => {
-    setSelectedCategory(category);
-    onOpen();
-  };
+	const openSubcategoryDrawer = (category: string) => {
+		setSelectedCategory(category);
+		onOpen();
+	};
 
-  return (
+	return (
 		<Flex alignItems='center'>
 			{/* For Mobile */}
 			<Flex display={{ base: 'flex', xl: 'none' }} gap={4} alignItems='center'>

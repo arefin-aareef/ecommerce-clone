@@ -11,7 +11,7 @@ import {
 	Text,
 } from '@chakra-ui/react';
 import React, { FC } from 'react';
-import { footerHeading } from '../data/FooterData';
+import { footerHeading } from '../util/data/FooterData';
 import FooterItem from './FooterItem';
 
 type FooterTopPartProps = {};
@@ -38,9 +38,7 @@ const FooterTopPart: FC<FooterTopPartProps> = ({}) => {
 						<Flex direction='column'>
 							{item.subFooter &&
 								item.subFooter.map(subItem => (
-									<FooterItem  key={subItem.title}>
-										{subItem.title}
-									</FooterItem>
+									<FooterItem key={subItem.title}>{subItem.title}</FooterItem>
 								))}
 						</Flex>
 					</Flex>
@@ -78,7 +76,7 @@ const FooterTopPart: FC<FooterTopPartProps> = ({}) => {
 							</Box>
 							<AccordionIcon />
 						</AccordionButton>
-						
+
 						{item.subFooter.map(subItem => (
 							<AccordionPanel pb={4}>
 								<FooterItem key={subItem.title}>{subItem.title}</FooterItem>
