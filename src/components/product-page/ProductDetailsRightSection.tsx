@@ -27,7 +27,7 @@ const ProductDetailsRightSection: FC<ProductDetailsRightSectionProps> = ({
 				{conditionText}
 			</Text>
 			<Text pt={6} noOfLines={3} fontSize='0.875em'>
-				{Array(5).fill(singleProduct.description).join('')}
+				{Array(5).fill(singleProduct.description).join(' ')}
 			</Text>
 			<SizeChartSection singleProduct={singleProduct} />
 			<ColorInfoSection singleProduct={singleProduct} />

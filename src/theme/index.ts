@@ -28,6 +28,7 @@ const colors = {
 	cartSidebarTextColor: '#2d2d2d',
 	productCardBorderColor: '#ebebeb',
 	productColorBorderColor: '#e3e3e3',
+	tabBorderColor: '#e6e6e6',
 };
 
 // 6. Add Breakpoints
