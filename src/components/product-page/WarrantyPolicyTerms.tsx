@@ -8,9 +8,9 @@ type WarrantyPolicyTermsProps = {};
 const WarrantyPolicyTerms: FC<WarrantyPolicyTermsProps> = ({}) => {
 	return (
 		<Flex direction='column' gap={6}>
-			<SectionHeader>Warranty Claim Issue</SectionHeader>
+			<SectionHeader>{termsWarrantyPolicy[0]}</SectionHeader>
 			<Flex direction='column' gap={8}>
-				{termsWarrantyPolicy.map((item, index) => (
+				{termsWarrantyPolicy.slice(1).map((item, index) => (
 					<Text
 						key={index}
 						fontWeight={
@@ -18,7 +18,7 @@ const WarrantyPolicyTerms: FC<WarrantyPolicyTermsProps> = ({}) => {
 								? 600
 								: 'normal'
 						}
-            pb={ index === 0 ? 12 : 0}
+						pb={index === 0 ? 12 : 0}
 					>
 						{item}
 					</Text>

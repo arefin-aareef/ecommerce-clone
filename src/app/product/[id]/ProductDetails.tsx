@@ -1,6 +1,6 @@
 import ProductDetailsRightSection from '@/components/product-page/ProductDetailsRightSection';
 import ProductDetailsTabSection from '@/components/product-page/ProductDetailsTabSection';
-import { Box, Flex, Grid, Image } from '@chakra-ui/react';
+import { Box, Divider, Flex, Grid, Image } from '@chakra-ui/react';
 import React, { FC } from 'react';
 
 type ProductDetailsProps = {
@@ -17,6 +17,7 @@ const ProductDetails: FC<ProductDetailsProps> = ({ singleProduct }) => {
 				<ProductDetailsRightSection singleProduct={singleProduct} />
 			</Grid>
 			<ProductDetailsTabSection singleProduct={singleProduct} />
+			<Divider />
 		</Flex>
 	);
 };

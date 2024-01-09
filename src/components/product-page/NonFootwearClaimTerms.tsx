@@ -1,16 +1,16 @@
+import { termsDefinitionClaimNonFootwear } from '@/lib/Constants';
 import { Box, Flex, Text } from '@chakra-ui/react';
 import React, { FC } from 'react';
-import { termsDefinitionClaimShoes } from '@/lib/Constants';
 import { PiDotOutlineFill } from 'react-icons/pi';
 
-type ShoesClaimTermsProps = {};
+type NonFootwearClaimTermsProps = {};
 
-const ShoesClaimTerms: FC<ShoesClaimTermsProps> = ({}) => {
+const NonFootwearClaimTerms: FC<NonFootwearClaimTermsProps> = ({}) => {
 	return (
 		<Flex direction='column' gap={6}>
-			<Text fontWeight={600}>{termsDefinitionClaimShoes[0]}</Text>
+			<Text fontWeight={600}>{termsDefinitionClaimNonFootwear[0]}</Text>
 			<Flex gap={2} direction='column'>
-				{termsDefinitionClaimShoes.slice(1).map(item => (
+				{termsDefinitionClaimNonFootwear.slice(1).map(item => (
 					<Flex gap={1}>
 						<Box pt={1.5}>
 							<PiDotOutlineFill />
@@ -23,4 +23,4 @@ const ShoesClaimTerms: FC<ShoesClaimTermsProps> = ({}) => {
 	);
 };
 
-export default ShoesClaimTerms;
+export default NonFootwearClaimTerms;

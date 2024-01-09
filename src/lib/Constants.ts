@@ -1,8 +1,24 @@
 export const sizeModalImg = '/modal/modal.jpg';
+export const sizeModalImg2 = '/modal/modal2.jpg';
 
 export const tk = 'Tk';
 
 export const conditionText = '* Offer is valid only for batabd.com';
+
+// DESCRIPTION TEXT
+
+export const descriptions = [
+	'PRODUCT DETAILS',
+	'FEATURES:',
+	'- Type:',
+	'- Gender:',
+	'- Upper Material:',
+	'- Color:',
+	'- Sole:',
+	'STYLE TIPS:',
+];
+
+// TERMS AND CONDITIONS TEXTS
 
 export const termsInitials = [
 	'Dear Customer, we try our best from our end to provide you the best customer experience.',
@@ -12,6 +28,7 @@ export const termsInitials = [
 ];
 
 export const termsOrderingPolicy = [
+	'Ordering Policy',
 	'Service is only available for articles (products) which are shown in stock on our website',
 	'The delivery of your order is subjected to availability of stock.',
 	'Only one product should be booked in one order, in case of any customer needs to order multiple products or same products in multiple quantity, customers will need to place multiple separate orders.',
@@ -21,6 +38,7 @@ export const termsOrderingPolicy = [
 ];
 
 export const termsShippingPolicy = [
+	'Shipping Policy',
 	'We are committed to delivering your order accurately, in good condition, and on time. While we will endeavor to ship all items in your order together, this may not always be possible due to product characteristics, or stock availability.',
 	'Please note our shipping policy as follows:',
 	'We make our best efforts to ship each item in your order within 3 to 5 working days inside Dhaka metropolitan city and 7 to 10 working days outside Dhaka.',
@@ -31,6 +49,7 @@ export const termsShippingPolicy = [
 ];
 
 export const termsSizeChange = [
+	'Size Change',
 	'Dear Customer,',
 	'We are committed to ensure your satisfaction with any merchandise you have ordered from Batabd.com. The delivery of your order is subjected to availability of stock. You are expected to check and receive your product in front of the delivery man. If your product is damaged, defective, incorrect or has any mismatch in size or pricing issue at the time of delivery, please return it immediately to the delivery person.',
 	"If the size doesn't fit, you can exchange the size of the product bought from Bata E-Commerce site within 7 days from the delivery date. We will not accept the exchange request if you request for exchange after 7 days from the delivery date.",
@@ -41,6 +60,7 @@ export const termsSizeChange = [
 ];
 
 export const termsRefund = [
+	'Refund',
 	"We don't process refund for orders which are in 'Shipped. We only process refund for Cancel, Pending or Returned orders. If your order is shipped, you are requested to check with the 3rd Party Logistics Provider first to whom your consignment is provided.",
 	'After getting your refund request, our team will process the refund after crosschecking and verifying whether your product has reached to your or not.',
 	'Please provide your details such as Order No, Order Date, Contact No. (the number from which your order was created), payment method (Bkash/Nagad/SSLCommerz) and any other relevant information.',
@@ -50,6 +70,7 @@ export const termsRefund = [
 ];
 
 export const termsGiftCards = [
+	'Terms & Conditions for BataBd Gift Card/ Gift Vouchers',
 	'These vouchers can only be redeemed at any directly owned Bata store across Bangladesh but, not from any of the dealer or franchised and Online stores. You can find the list of our Bata stores from which you can redeem your voucher in the Store List.',
 	'With this voucher, customers will be allowed to buy products of their choice which are of regular price. Discounted products will not be sold through gift vouchers.',
 	'This voucher is not applicable for Cash on Delivery method. It is up for purchase through pre-payment only (Mobile Banking or Debit/Credit Card).',
@@ -63,6 +84,7 @@ export const termsGiftCards = [
 ];
 
 export const termsWarrantyClaim = [
+	'Warranty Claim Issue',
 	'PROCESS OF RECEIVING WARRANTY CLAIM SETTLEMENT',
 	'Dear Customer, we try our best from our end to provide you the best customer experience. We are committed to ensure your satisfaction with any merchandise you have ordered from Batabd.com. The delivery of your order is subjected to availability of stock. You are expected to check and receive your product in front of the delivery man. If your product is damaged, defective, incorrect or has any mismatch in size or pricing issue at the time of delivery, please return it immediately to the delivery person.',
 	'But still if you face product issues which complies with our warranty policy stated below, please kindly call our customer service at 09666200300. (9.00am to 9.00pm except Govt. holidays).',
@@ -73,6 +95,7 @@ export const termsWarrantyClaim = [
 ];
 
 export const termsWarrantyPolicy = [
+	'Warranty Policy',
 	'100% claim of paid amount provided for merchandise bought from Batabd.com in case of any major manufacturing defects, if the concerned issue is raised to our customer service and then the product is brought to our store within 30 days from the date of the delivery.',
 	'*Bata reserves the right not accepts to any fraudulent claim and make final decision on any claim settlement.',
 	'*No claims will be provided for discounted products having more than 10% discount.',
@@ -81,7 +104,21 @@ export const termsWarrantyPolicy = [
 ];
 
 export const termsDefinitionClaim = [
+	'DEFINITION OF CLAIM',
 	'A Shoe/Accessory manufactured and sold by Batabd.com which develops any defect during the course of normal wear by the customer.',
+];
+
+export const termsDefinitionClaimShoes = [
 	'For Shoes:',
 	'If the upper is damaged and/or becomes discolored.',
+	'The upper or sole is torn due to bad stitching and/or bad material.',
+	'Sole detachment occurs due to bad adhesion.',
+	'The sole/insole/material is cracked or spoiled due to bad material.',
+];
+
+export const termsDefinitionClaimNonFootwear = [
+	'For Non Footwear (Bags, Belts, Wallets)',
+	'Discolor on buckles',
+	'Material cracked or damaged due to bad material',
+	'Chain or handler detached due to poor stitching',
 ];

@@ -9,13 +9,13 @@ type ShippingPolicyTermsProps = {};
 const ShippingPolicyTerms: FC<ShippingPolicyTermsProps> = ({}) => {
 	return (
 		<Flex direction='column' gap={6}>
-			<SectionHeader>Shipping Policy</SectionHeader>
+			<SectionHeader>{termsShippingPolicy[0]}</SectionHeader>
 			<Flex gap={2} direction='column'>
 				<Flex direction='column' gap={12}>
-					<Text>{termsShippingPolicy[0]}</Text>
 					<Text>{termsShippingPolicy[1]}</Text>
+					<Text>{termsShippingPolicy[2]}</Text>
 				</Flex>
-				{termsShippingPolicy.slice(2).map((item, index) => (
+				{termsShippingPolicy.slice(3).map((item, index) => (
 					<Flex key={index} gap={1}>
 						<Box pt={1.5}>
 							<PiDotOutlineFill />

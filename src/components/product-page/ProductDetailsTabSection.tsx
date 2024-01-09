@@ -11,6 +11,7 @@ import React, { FC } from 'react';
 import ProductPageTab from '../util/tabs/ProductPageTab';
 import DescriptionPanel from './DescriptionPanel';
 import TermsPanel from './TermsPanel';
+import SizeChartPanel from './SizeChartPanel';
 
 type ProductDetailsTabSectionProps = { singleProduct: any };
 
@@ -29,13 +30,13 @@ const ProductDetailsTabSection: FC<ProductDetailsTabSectionProps> = ({
 				<TabPanel>
 					<DescriptionPanel singleProduct={singleProduct} />
 				</TabPanel>
-
+				
 				<TabPanel>
 					<TermsPanel />
 				</TabPanel>
 
 				<TabPanel>
-					<p>three!</p>
+					<SizeChartPanel />
 				</TabPanel>
 			</TabPanels>
 		</Tabs>

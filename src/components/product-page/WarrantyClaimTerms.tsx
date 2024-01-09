@@ -11,9 +11,9 @@ const WarrantyClaimTerms: FC<WarrantyClaimTermsProps> = ({}) => {
 
   return (
 		<Flex direction='column' gap={6}>
-			<SectionHeader>Warranty Claim Issue</SectionHeader>
+			<SectionHeader>{termsWarrantyClaim[0]}</SectionHeader>
 			<Flex direction='column' gap={8}>
-				{termsWarrantyClaim.map((item, index) => (
+				{termsWarrantyClaim.slice(1).map((item, index) => (
 					<Text
 						key={index}
 						fontWeight={index === 0 ? 600 : 'normal'}

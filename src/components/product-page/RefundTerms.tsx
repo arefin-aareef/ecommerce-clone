@@ -8,9 +8,9 @@ type RefundTermsProps = {};
 const RefundTerms: FC<RefundTermsProps> = ({}) => {
 	return (
 		<Flex direction='column' gap={6}>
-			<SectionHeader>Refund</SectionHeader>
+			<SectionHeader>{termsRefund[0]}</SectionHeader>
 			<Flex direction='column' gap={8}>
-				{termsRefund.map((item, index) => (
+				{termsRefund.slice(1).map((item, index) => (
 					<Text key={index}>{item}</Text>
 				))}
 			</Flex>

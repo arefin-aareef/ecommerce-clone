@@ -8,9 +8,9 @@ type SizeChangeTermsProps = {};
 const SizeChangeTerms: FC<SizeChangeTermsProps> = ({}) => {
 	return (
 		<Flex direction='column' gap={6}>
-			<SectionHeader>Size Change</SectionHeader>
+			<SectionHeader>{termsSizeChange[0]}</SectionHeader>
 			<Flex direction='column' gap={8}>
-				{termsSizeChange.map((item, index) => (
+				{termsSizeChange.slice(1).map((item, index) => (
 					<Text key={index}>{item}</Text>
 				))}
 			</Flex>

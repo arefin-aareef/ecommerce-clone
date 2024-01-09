@@ -9,11 +9,9 @@ type GiftVoucherTermsProps = {};
 const GiftVoucherTerms: FC<GiftVoucherTermsProps> = ({}) => {
 	return (
 		<Flex direction='column' gap={6}>
-			<SectionHeader>
-				Terms & Conditions for BataBd Gift Card/ Gift Vouchers
-			</SectionHeader>
+			<SectionHeader>{termsGiftCards[0]}</SectionHeader>
 			<Flex gap={2} direction='column'>
-				{termsGiftCards.map(item => (
+				{termsGiftCards.slice(1).map(item => (
 					<Flex gap={1}>
 						<Box pt={1.5}>
 							<PiDotOutlineFill />
